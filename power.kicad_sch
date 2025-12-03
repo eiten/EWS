@@ -3954,7 +3954,7 @@
 				)
 			)
 		)
-		(property "Value" "5k6"
+		(property "Value" "5k1"
 			(at 181.61 68.58 90)
 			(effects
 				(font
@@ -3981,6 +3981,33 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" ""
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" ""
+			(at 181.61 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
 			(at 181.61 64.77 0)
 			(effects
 				(font
