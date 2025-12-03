@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "b6b0b38e-155e-4a3b-9452-604251bbe988")
 	(paper "A4")
+	(title_block
+		(title "EWS - Power, CANbus and USB HAT for 3D Printers")
+		(date "2025-12-03")
+		(rev "1.0")
+		(company "Eduard Iten")
+	)
 	(lib_symbols
 		(symbol "Device:C"
 			(pin_numbers
@@ -3444,7 +3450,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06bbe2f7-5dc0-449d-93de-3e6151774ef3")
-		(property "Reference" "R206"
+		(property "Reference" "R207"
 			(at 215.9 67.3099 0)
 			(effects
 				(font
@@ -3525,7 +3531,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R206")
+					(reference "R207")
 					(unit 1)
 				)
 			)
@@ -3541,7 +3547,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "316fe2f1-d4f4-4f60-a7bb-e4cbc030fc59")
-		(property "Reference" "R208"
+		(property "Reference" "R202"
 			(at 109.22 82.5499 0)
 			(effects
 				(font
@@ -3595,7 +3601,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R208")
+					(reference "R202")
 					(unit 1)
 				)
 			)
@@ -3940,7 +3946,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "46992bfa-c6b7-4bdd-a364-911018003fdd")
-		(property "Reference" "R204"
+		(property "Reference" "R205"
 			(at 181.61 71.12 90)
 			(effects
 				(font
@@ -3992,7 +3998,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R204")
+					(reference "R205")
 					(unit 1)
 				)
 			)
@@ -4171,7 +4177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5bd5d93e-7f95-4fdc-95eb-3fcd13325a03")
-		(property "Reference" "R207"
+		(property "Reference" "R208"
 			(at 215.9 82.5499 0)
 			(effects
 				(font
@@ -4252,7 +4258,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R207")
+					(reference "R208")
 					(unit 1)
 				)
 			)
@@ -4365,7 +4371,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "646d5981-a5e3-4780-8f2b-56cc1bdad101")
-		(property "Reference" "R202"
+		(property "Reference" "R203"
 			(at 119.38 64.77 90)
 			(effects
 				(font
@@ -4417,7 +4423,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R202")
+					(reference "R203")
 					(unit 1)
 				)
 			)
@@ -4596,7 +4602,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "78a5f5e7-0965-406d-a367-30245c5f4adb")
-		(property "Reference" "R203"
+		(property "Reference" "R204"
 			(at 152.4 82.5499 0)
 			(effects
 				(font
@@ -4650,7 +4656,7 @@
 		(instances
 			(project ""
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R203")
+					(reference "R204")
 					(unit 1)
 				)
 			)
@@ -4762,7 +4768,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8855a8d6-e424-455a-aa46-d8e0b3d74c08")
-		(property "Reference" "R205"
+		(property "Reference" "R206"
 			(at 191.77 67.3099 0)
 			(effects
 				(font
@@ -4843,7 +4849,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/e94b5c4c-885f-4cd2-8976-23421227f36b"
-					(reference "R205")
+					(reference "R206")
 					(unit 1)
 				)
 			)

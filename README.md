@@ -2,7 +2,7 @@
 
 > 🌍 **Languages:** [English](README.md) | [Deutsch](README.de.md)
 
-A universal interface board (HAT) for Raspberry Pi 4/5 and Radxa Rock 5B designed for use in Voron 3D printers. Provides powerful 5V supply (8A), CAN-Bus interface (USB-Bridge or Native), USB hub, and fan control.
+A universal interface board (HAT) for Raspberry Pi 4/5 and Radxa Rock 5B designed for use in Voron 3D printers. Provides powerful 5V supply (8A), CAN-Bus interface (USB-Bridge or Native), and USB hub.
 
 ![Universal Voron Power & CAN HAT](img/EWS.png)
 
@@ -19,17 +19,14 @@ A universal interface board (HAT) for Raspberry Pi 4/5 and Radxa Rock 5B designe
     - [🔋 Power Supply (24V Input)](#-power-supply-24v-input)
     - [⚡ DC/DC Converter (5V Output)](#-dcdc-converter-5v-output)
     - [🔌 Logic Power Supply (Power Path)](#-logic-power-supply-power-path)
-    - [🧠 MCU & CAN Interface](#-mcu--can-interface)
+    - [💻 MCU & CAN Interface](#-mcu--can-interface)
     - [📡 USB Hub](#-usb-hub)
-    - [🌊 Fan Control](#-fan-control)
   - [📋 Klipper Configuration](#-klipper-configuration)
     - [Basic MCU Setup](#basic-mcu-setup)
-    - [Fan Control](#fan-control)
   - [🔌 Pinout & Connector Assignment](#-pinout--connector-assignment)
     - [Power Input](#power-input)
     - [CAN-Bus Ports](#can-bus-ports)
     - [USB Ports](#usb-ports)
-    - [Fan Control](#fan-control-1)
   - [🛠️ PCB Specifications](#️-pcb-specifications)
   - [⚠️ Manufacturing Recommendations](#️-manufacturing-recommendations)
     - [PCB Manufacturing](#pcb-manufacturing)
@@ -53,17 +50,16 @@ The board addresses common pain points in Voron builds by providing robust power
 
 - **Input Voltage:** 24V DC nominal
 - **Connectors:** XT30PW-F (horizontal) or 5.08mm screw terminal
-- **Reverse Polarity Protection:** P-Channel MOSFET (CJAC70P06, -60V, -70A, RDSon ~8mOhm)
-- **MOSFET Gate Protection:** 15V Zener diode (BZT52C15S) between Source and Gate
-- **Voltage Divider:** 30kΩ (Gate-Source) and 30kΩ (Gate-GND)
-- **Overvoltage Protection:** TVS diode (SMAJ26A, 26V Standoff, Unidirectional) placed AFTER MOSFET to GND
+- **Toolhead Switching:** 2x P-Channel MOSFETs (CJAC70P06, -60V, -70A, RDSon ~8mΩ) controlled by PB2 and PA5 for toolhead power switching (safety feature if PWM-FET on toolhead fails)
+- **Overvoltage Protection:** TVS diode (SMAJ26A, 26V Standoff, Unidirectional) to GND
 - **Input Protection:** Distributed fusing (5A for DC/DC, 5A each for CAN ports)
 
 ### ⚡ DC/DC Converter (5V Output)
 
 - **Controller:** MaxLinear XR76208 (Synchronous Step-Down, 8A, COT)
 - **Input Fuse:** 5A SMD 1812 Slow Blow
-- **Output Voltage:** 5.25V (set via feedback divider: R_Top=15.5kOhm, R_Bottom=2.0kOhm)
+- **Reverse Polarity Protection:** SS56 Schottky diode
+- **Output Voltage:** 5.25V (set via feedback divider: R_Top=15.5kΩ, R_Bottom=2.0kΩ)
 - **Switching Frequency:** ~600kHz (set via Ron=30kOhm)
 - **Inductance:** 3.3µH Shielded (Sunlord MDA1050-3R3M, Isat ~17A)
 - **Input Capacitors:** 4x 10µF 1206 ceramic + 1x 100µF electrolytic/polymer (bulk)
@@ -109,7 +105,6 @@ The board addresses common pain points in Voron builds by providing robust power
   - STM32 (internal)
   - USB-C connector (for touchscreen)
   - USB-A connector (vertical, for webcam)
-  - JST-XH header (internal, pinout: 5V, D-, D+, GND)
 
 **USB Port Protection:**
 - **Concept:** 100µF electrolytic tank at +5V_PWR, followed by polyfuse, followed by 22µF ceramic at connector
@@ -119,15 +114,7 @@ The board addresses common pain points in Voron builds by providing robust power
   - ESD Protection: SRV05-4 TVS array
 - **USB-A Port (Webcam):**
   - Polyfuse: 1.5A hold current
-  - ESD Protection: SRV05-4 TVS array
-
-### 🌊 Fan Control
-
-- **Connector:** JST-XH 2-pin
-- **Driver:** N-Channel MOSFET (AO3400)
-- **STM32 Pin:** PA8 (Timer 1, hardware PWM capable)
-- **Fail-Safe:** 10kΩ pull-up resistor from gate to 3.3V (fan runs 100% during reset/flash)
-- **Gate Series Resistance:** 1kΩ
+- **ESD Protection:** SRV05-4 TVS array
 
 ## 📋 Klipper Configuration
 
@@ -141,26 +128,6 @@ canbus_uuid: your_uuid_here
 [temperature_sensor hat_mcu]
 sensor_type: temperature_mcu
 sensor_mcu: hat
-```
-
-### Fan Control
-```ini
-[temperature_fan mcu_fan]
-pin: hat:!PA8
-# Note: Inverted due to fail-safe pull-up logic
-sensor_type: temperature_mcu
-sensor_mcu: hat
-max_power: 1.0
-shutdown_speed: 1.0
-cycle_time: 0.01
-hardware_pwm: True
-target_temp: 50.0
-min_temp: 10
-max_temp: 80
-control: pid
-pid_kp: 1.0
-pid_ki: 0.5
-pid_kd: 2.0
 ```
 
 ## 🔌 Pinout & Connector Assignment
@@ -227,7 +194,6 @@ pid_kd: 2.0
 | **Logic Supply Current** | 2 | A |
 | **CAN Baud Rate** | up to 1 | Mbit/s |
 | **USB Speed** | 480 | Mbit/s |
-| **Fan Control** | PWM, 5V switching | - |
 | **Operating Temperature** | -10 to +70 | °C |
 | **Dimensions** | 65 x 56 | mm |
 
