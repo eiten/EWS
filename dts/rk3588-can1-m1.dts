@@ -1,0 +1,41 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+    compatible = "rockchip,rk3588";
+
+    /* Metadaten für rsetup (Radxa Overlay Manager) */
+    metadata {
+        title = "Enable CAN1-M1";
+        compatible = "radxa,rock-5b", "radxa,rock-5b-plus";
+        category = "interface";
+        exclusive = "GPIO4_B3", "GPIO4_B2";
+        description = "Enable CAN1 on Pin 3 (TX) and Pin 5 (RX). Disables I2C7 and I2S1 on these pins.";
+    };
+
+    /* Fragment 0: CAN1 aktivieren und Pins zuweisen */
+    fragment@0 {
+        target = <&can1>;
+        __overlay__ {
+            status = "okay";
+            pinctrl-names = "default";
+            pinctrl-0 = <&can1m1_pins>;
+        };
+    };
+
+    /* Fragment 1: I2C7 deaktivieren (Konflikt auf Pin 3/5) */
+    fragment@1 {
+        target = <&i2c7>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+
+    /* Fragment 2: I2S1 deaktivieren (Konflikt auf Pin 3/5) */
+    fragment@2 {
+        target = <&i2s1_8ch>;
+        __overlay__ {
+            status = "disabled";
+        };
+    };
+};
