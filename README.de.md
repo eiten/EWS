@@ -55,7 +55,7 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
 - **Anschlüsse:** XT30PW-F (liegend) oder 5.08mm Schraubklemme
 - **Verpolschutz:** P-Channel MOSFET (CJAC70P06, -60V, -70A, RDSon ca. 8mOhm)
 - **Gate-Schutz MOSFET:** 15V Zener-Diode (BZT52C15S) zwischen Source und Gate
-- **Spannungsteiler:** 30kOhm (Gate-Source) und 30kOhm (Gate-GND)
+- **Spannungsteiler:** 30kΩ (Gate-Source) und 30kΩ (Gate-GND)
 - **Überspannungsschutz:** TVS-Diode (SMAJ26A, 26V Standoff, Unidirektional) platziert NACH dem MOSFET gegen GND
 - **Eingangssicherung:** Verteilte Absicherung (5A für DC/DC, je 5A für CAN-Anschlüsse)
 
@@ -70,8 +70,8 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
 - **Ausgangskondensatoren:** 4x 22µF 1206 Keramik
 - **Stabilität:** Feed-Forward Kondensator (Cff) 1nF parallel zum oberen Feedback-Widerstand
 - **Soft-Start:** 100nF an Pin SS (ca. 6ms Anlaufzeit)
-- **Stromlimit:** 5.6kOhm Widerstand am ILIM Pin
-- **Enable:** Spannungsteiler von 24V (100kOhm oben, 22kOhm unten) = ca. 4.3V am Pin
+- **Stromlimit:** 5.1kΩ Widerstand (~10.2A Grenzwert)
+- **Enable:** Spannungsteiler von 24V (100kΩ oben, 22kΩ unten) = ca. 4.3V am Pin
 
 ### 🔌 Logik-Spannungsversorgung (Power Path)
 
@@ -89,11 +89,11 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
 - **Pi-Verbindung:**
   - USB (PA11/PA12) an USB-Hub
   - UART (PA9/PA10) an Pi-Header (Pin 8/10) über Jumper trennbar
-  - NRST an Pi GPIO 22 (via 1kOhm) + Taster gegen GND + 100nF Cap
-  - BOOT0 (Pin 24/PA14 shared mit SWCLK) an Pi GPIO 27 (via 1kOhm) + Taster gegen 3.3V + 10kOhm Pull-Down
+  - NRST an Pi GPIO 22 (via 1kΩ) + Taster gegen GND + 100nF Cap
+  - BOOT0 (Pin 24/PA14 shared mit SWCLK) an Pi GPIO 27 (via 1kΩ) + Taster gegen 3.3V + 10kΩ Pull-Down
 - **CAN-Transceiver:** MCP2542WFD (oder kompatibel)
-- **Muxing:** Jumper wählbar zwischen STM32 (USB-CAN Bridge) und Rock/Pi Native GPIOs (Pin 3/5)
-- **Terminierung:** 120 Ohm Widerstand, zuschaltbar per DIP-Switch (direkt an den Buchsen)
+- **Muxing:** Jumper wählbar zwischen STM32 (USB-CAN Bridge) und Rock/Pi Native GPIOs (Pin 3/5). Bei ROCK 5B/5B+ kann über Jumper gewählt werden, ob CAN vom Onboard-STM32G0B1 kommt oder nativ an den Rockchip geht (über GPIO-Leiste Pin 3 (CAN-RX) und Pin 5 (CAN-TX))
+- **Terminierung:** 120 Ω Widerstand, zuschaltbar per Jumper (direkt an den Buchsen)
 - **CAN-Anschlüsse:** 2x Molex Micro-Fit 3.0 (2x2)
 - **Micro-Fit Pinout:** Pin 1=24V, Pin 2=GND (Obere Reihe), Pin 3=CAN_H, Pin 4=CAN_L (Untere Reihe)
 - **CAN-Stromabsicherung:** Je 5A SMD 1812 Slow Blow pro Port
@@ -123,11 +123,11 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
 
 ### 🌊 Lüftersteuerung
 
-- **Anschluss:** Dual-Footprint JST-XH (2.54mm) und JST-PH 2-Pin parallel
+- **Anschluss:** JST-XH 2-Pin
 - **Treiber:** N-Channel MOSFET (AO3400)
 - **STM32 Pin:** PA8 (Timer 1, Hardware PWM fähig)
-- **Fail-Safe:** 10kOhm Pull-Up Widerstand vom Gate nach 3.3V (Lüfter läuft 100% bei Reset/Flash-Vorgang)
-- **Gate-Serienwiderstand:** 1kOhm
+- **Fail-Safe:** 10kΩ Pull-Up Widerstand vom Gate nach 3.3V (Lüfter läuft 100% bei Reset/Flash-Vorgang)
+- **Gate-Serienwiderstand:** 1kΩ
 
 ## 📋 Klipper Konfiguration
 
@@ -183,7 +183,7 @@ pid_kd: 2.0
 - **JST-XH Intern:** 5V, D-, D+, GND
 
 ### Lüftersteuerung
-- **JST-XH/PH 2-pin:** PWM Lüftersteuerung (5V Schaltung)
+- **JST-XH 2-pin:** Lüftersteuerung (Pin 1: +5V, Pin 2: GND/PWM)
 
 ## 🛠️ PCB Spezifikationen
 
@@ -206,7 +206,7 @@ pid_kd: 2.0
 ### PCB-Fertigung
 - **Kupferdicke:** **2oz Kupfer empfohlen** für verbesserte thermische Leistung und Strombelastbarkeit
 - **Via-Spezifikationen:** Minimum 12-20 Vias am DC/DC-Ausgang für Thermal Management
-- **Impedanzkontrolle:** 90 Ohm Differentiell für USB-Leiterbahnen (D+/D- Paare)
+- **Impedanzkontrolle:** 90 Ω Differentiell für USB-Leiterbahnen (D+/D- Paare)
 
 ### Bestückungshinweise
 - **24V Pfad:** Minimum 3mm Leiterbahnbreite auf Top & Bottom Layern für 12A Gesamtstrom

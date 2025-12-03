@@ -55,7 +55,7 @@ The board addresses common pain points in Voron builds by providing robust power
 - **Connectors:** XT30PW-F (horizontal) or 5.08mm screw terminal
 - **Reverse Polarity Protection:** P-Channel MOSFET (CJAC70P06, -60V, -70A, RDSon ~8mOhm)
 - **MOSFET Gate Protection:** 15V Zener diode (BZT52C15S) between Source and Gate
-- **Voltage Divider:** 30kOhm (Gate-Source) and 30kOhm (Gate-GND)
+- **Voltage Divider:** 30kΩ (Gate-Source) and 30kΩ (Gate-GND)
 - **Overvoltage Protection:** TVS diode (SMAJ26A, 26V Standoff, Unidirectional) placed AFTER MOSFET to GND
 - **Input Protection:** Distributed fusing (5A for DC/DC, 5A each for CAN ports)
 
@@ -70,8 +70,8 @@ The board addresses common pain points in Voron builds by providing robust power
 - **Output Capacitors:** 4x 22µF 1206 ceramic
 - **Stability:** Feed-forward capacitor (Cff) 1nF parallel to upper feedback resistor
 - **Soft-Start:** 100nF at SS pin (~6ms startup time)
-- **Current Limit:** 5.6kOhm resistor at ILIM pin
-- **Enable:** Voltage divider from 24V (100kOhm upper, 22kOhm lower) = ~4.3V at pin
+- **Current Limit:** 5.1kΩ resistor (~10.2A limit)
+- **Enable:** Voltage divider from 24V (100kΩ upper, 22kΩ lower) = ~4.3V at pin
 
 ### 🔌 Logic Power Supply (Power Path)
 
@@ -89,11 +89,11 @@ The board addresses common pain points in Voron builds by providing robust power
 - **Pi Connection:**
   - USB (PA11/PA12) to USB Hub
   - UART (PA9/PA10) to Pi Header (Pin 8/10) via jumperable connection
-  - NRST to Pi GPIO 22 (via 1kOhm) + button to GND + 100nF cap
-  - BOOT0 (Pin 24/PA14 shared with SWCLK) to Pi GPIO 27 (via 1kOhm) + button to 3.3V + 10kOhm pull-down
+  - NRST to Pi GPIO 22 (via 1kΩ) + button to GND + 100nF cap
+  - BOOT0 (Pin 24/PA14 shared with SWCLK) to Pi GPIO 27 (via 1kΩ) + button to 3.3V + 10kΩ pull-down
 - **CAN Transceiver:** MCP2542WFD (or compatible)
-- **Muxing:** Jumper selectable between STM32 (USB-CAN Bridge) and Rock/Pi Native GPIOs (Pin 3/5)
-- **Termination:** 120 Ohm resistor, switchable per DIP switch (directly at connectors)
+- **Muxing:** Jumper selectable between STM32 (USB-CAN Bridge) and Rock/Pi Native GPIOs (Pin 3/5). For ROCK 5B/5B+, jumpers can select whether CAN comes from onboard STM32G0B1 or goes natively to Rockchip (via GPIO header Pin 3 (CAN-RX) and Pin 5 (CAN-TX))
+- **Termination:** 120 Ω resistor, switchable per jumper (directly at connectors)
 - **CAN Connectors:** 2x Molex Micro-Fit 3.0 (2x2)
 - **Micro-Fit Pinout:** Pin 1=24V, Pin 2=GND (upper row), Pin 3=CAN_H, Pin 4=CAN_L (lower row)
 - **CAN Power Protection:** 5A SMD 1812 Slow Blow per port
@@ -115,7 +115,7 @@ The board addresses common pain points in Voron builds by providing robust power
 - **Concept:** 100µF electrolytic tank at +5V_PWR, followed by polyfuse, followed by 22µF ceramic at connector
 - **USB-C Port (Screen):**
   - Polyfuse: 4.0A hold current (hot chamber derating considered)
-  - CC Lines: CC1 and CC2 each with 10kOhm resistor to VBUS (behind fuse) for 3A advertisement
+  - CC Lines: CC1 and CC2 each with 10kΩ resistor to VBUS (behind fuse) for 3A advertisement
   - ESD Protection: SRV05-4 TVS array
 - **USB-A Port (Webcam):**
   - Polyfuse: 1.5A hold current
@@ -123,11 +123,11 @@ The board addresses common pain points in Voron builds by providing robust power
 
 ### 🌊 Fan Control
 
-- **Connector:** Dual-footprint JST-XH (2.54mm) and JST-PH 2-pin parallel
+- **Connector:** JST-XH 2-pin
 - **Driver:** N-Channel MOSFET (AO3400)
 - **STM32 Pin:** PA8 (Timer 1, hardware PWM capable)
-- **Fail-Safe:** 10kOhm pull-up resistor from gate to 3.3V (fan runs 100% during reset/flash)
-- **Gate Series Resistance:** 1kOhm
+- **Fail-Safe:** 10kΩ pull-up resistor from gate to 3.3V (fan runs 100% during reset/flash)
+- **Gate Series Resistance:** 1kΩ
 
 ## 📋 Klipper Configuration
 
@@ -183,7 +183,7 @@ pid_kd: 2.0
 - **JST-XH Internal:** 5V, D-, D+, GND
 
 ### Fan Control
-- **JST-XH/PH 2-pin:** PWM fan control (5V switching)
+- **JST-XH 2-pin:** Fan control (Pin 1: +5V, Pin 2: GND/PWM)
 
 ## 🛠️ PCB Specifications
 
@@ -206,7 +206,7 @@ pid_kd: 2.0
 ### PCB Manufacturing
 - **Copper Weight:** **2oz copper recommended** for improved thermal performance and current handling
 - **Via Specifications:** Minimum 12-20 vias at DC/DC output for thermal management
-- **Impedance Control:** 90 Ohm differential for USB traces (D+/D- pairs)
+- **Impedance Control:** 90 Ω differential for USB traces (D+/D- pairs)
 
 ### Assembly Notes
 - **24V Path:** Minimum 3mm trace width on top & bottom layers for 12A total current
