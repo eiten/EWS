@@ -2,7 +2,7 @@
 
 > 🌍 **Sprachen:** [English](README.md) | [Deutsch](README.de.md)
 
-Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B zur Verwendung in Voron 3D-Druckern. Bietet eine leistungsstarke 5V-Versorgung (8A), CAN-Bus-Interface (USB-Bridge oder Native), USB-Hub und Lüftersteuerung.
+Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B zur Verwendung in Voron 3D-Druckern. Bietet eine leistungsstarke 5V-Versorgung (8A), CAN-Bus-Interface (USB-Bridge oder Native) und USB-Hub.
 
 ![Universal Voron Power & CAN HAT](img/EWS.png)
 
@@ -19,17 +19,14 @@ Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B z
     - [🔋 Stromversorgung (24V Eingang)](#-stromversorgung-24v-eingang)
     - [⚡ DC/DC Wandler (5V Ausgang)](#-dcdc-wandler-5v-ausgang)
     - [🔌 Logik-Spannungsversorgung (Power Path)](#-logik-spannungsversorgung-power-path)
-    - [🧠 MCU & CAN Interface](#-mcu--can-interface)
+    - [💻 MCU & CAN Interface](#-mcu--can-interface)
     - [📡 USB Hub](#-usb-hub)
-    - [🌊 Lüftersteuerung](#-lüftersteuerung)
   - [📋 Klipper Konfiguration](#-klipper-konfiguration)
     - [Basis MCU Setup](#basis-mcu-setup)
-    - [Lüftersteuerung](#lüftersteuerung)
   - [🔌 Pinout & Steckerbelegung](#-pinout--steckerbelegung)
     - [Stromeingang](#stromeingang)
     - [CAN-Bus Anschlüsse](#can-bus-anschlüsse)
     - [USB Anschlüsse](#usb-anschlüsse)
-    - [Lüftersteuerung](#lüftersteuerung-1)
   - [🛠️ PCB Spezifikationen](#️-pcb-spezifikationen)
   - [⚠️ Fertigungsempfehlungen](#️-fertigungsempfehlungen)
     - [PCB-Fertigung](#pcb-fertigung)
@@ -53,17 +50,16 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
 
 - **Eingangsspannung:** 24V DC nominal
 - **Anschlüsse:** XT30PW-F (liegend) oder 5.08mm Schraubklemme
-- **Verpolschutz:** P-Channel MOSFET (CJAC70P06, -60V, -70A, RDSon ca. 8mOhm)
-- **Gate-Schutz MOSFET:** 15V Zener-Diode (BZT52C15S) zwischen Source und Gate
-- **Spannungsteiler:** 30kΩ (Gate-Source) und 30kΩ (Gate-GND)
-- **Überspannungsschutz:** TVS-Diode (SMAJ26A, 26V Standoff, Unidirektional) platziert NACH dem MOSFET gegen GND
+- **Toolhead-Schaltung:** 2x P-Channel MOSFETs (CJAC70P06, -60V, -70A, RDSon ca. 8mΩ) gesteuert durch PB2 und PA5 zum Ein-/Ausschalten der Toolheads (Sicherheitsfeature, falls PWM-FET am Toolhead durchlegiert)
+- **Überspannungsschutz:** TVS-Diode (SMAJ26A, 26V Standoff, Unidirektional) gegen GND
 - **Eingangssicherung:** Verteilte Absicherung (5A für DC/DC, je 5A für CAN-Anschlüsse)
 
 ### ⚡ DC/DC Wandler (5V Ausgang)
 
 - **Controller:** MaxLinear XR76208 (Synchroner Step-Down, 8A, COT)
 - **Eingangssicherung:** 5A SMD 1812 Slow Blow
-- **Ausgangsspannung:** 5.25V (eingestellt über Feedback-Teiler: R_Top=15.5kOhm, R_Bottom=2.0kOhm)
+- **Verpolschutz:** SS56 Schottky-Diode
+- **Ausgangsspannung:** 5.25V (eingestellt über Feedback-Teiler: R_Top=15.5kΩ, R_Bottom=2.0kΩ)
 - **Schaltfrequenz:** ca. 600kHz (eingestellt über Ron=30kOhm)
 - **Induktivität:** 3.3µH Shielded (Sunlord MDA1050-3R3M, Isat ca. 17A)
 - **Eingangskondensatoren:** 4x 10µF 1206 Keramik + 1x 100µF Elektrolyt/Polymer (Bulk)
@@ -109,7 +105,6 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
   - STM32 (Intern)
   - USB-C Buchse (für Touchscreen)
   - USB-A Buchse (Vertikal, für Webcam)
-  - JST-XH Header (Intern, Belegung: 5V, D-, D+, GND)
 
 **USB Port Absicherung:**
 - **Konzept:** 100µF Elko als Tank an +5V_PWR, gefolgt von Polyfuse, gefolgt von 22µF Keramik an der Buchse
@@ -119,15 +114,7 @@ Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Strom
   - ESD-Schutz: SRV05-4 TVS-Array
 - **USB-A Port (Webcam):**
   - Polyfuse: 1.5A Hold Current
-  - ESD-Schutz: SRV05-4 TVS-Array
-
-### 🌊 Lüftersteuerung
-
-- **Anschluss:** JST-XH 2-Pin
-- **Treiber:** N-Channel MOSFET (AO3400)
-- **STM32 Pin:** PA8 (Timer 1, Hardware PWM fähig)
-- **Fail-Safe:** 10kΩ Pull-Up Widerstand vom Gate nach 3.3V (Lüfter läuft 100% bei Reset/Flash-Vorgang)
-- **Gate-Serienwiderstand:** 1kΩ
+- **ESD-Schutz:** SRV05-4 TVS-Array
 
 ## 📋 Klipper Konfiguration
 
@@ -141,26 +128,6 @@ canbus_uuid: your_uuid_here
 [temperature_sensor hat_mcu]
 sensor_type: temperature_mcu
 sensor_mcu: hat
-```
-
-### Lüftersteuerung
-```ini
-[temperature_fan mcu_fan]
-pin: hat:!PA8
-# Hinweis: Invertiert wegen Fail-Safe Pull-Up Logic
-sensor_type: temperature_mcu
-sensor_mcu: hat
-max_power: 1.0
-shutdown_speed: 1.0
-cycle_time: 0.01
-hardware_pwm: True
-target_temp: 50.0
-min_temp: 10
-max_temp: 80
-control: pid
-pid_kp: 1.0
-pid_ki: 0.5
-pid_kd: 2.0
 ```
 
 ## 🔌 Pinout & Steckerbelegung
@@ -227,7 +194,6 @@ pid_kd: 2.0
 | **Logik-Versorgungsstrom** | 2 | A |
 | **CAN-Baudrate** | bis zu 1 | Mbit/s |
 | **USB-Geschwindigkeit** | 480 | Mbit/s |
-| **Lüftersteuerung** | PWM, 5V Schaltung | - |
 | **Betriebstemperatur** | -10 bis +70 | °C |
 | **Abmessungen** | 65 x 56 | mm |
 
