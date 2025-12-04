@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.25
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -59,10 +59,6 @@
         }
       ],
       "drc_exclusions": [
-        [
-          "clearance|158115000|116550000|090319a2-984c-412d-9fea-9fcfc02e5074|77886cf6-68e5-4ef7-b4b6-664c5a95f538",
-          ""
-        ],
         [
           "lib_footprint_mismatch|162470000|70480000|610ee3a1-cddb-4c0f-af4e-03d4d43dd8fd|00000000-0000-0000-0000-000000000000",
           ""
@@ -593,7 +589,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "EWS.step",
       "svg": "",
       "vrml": ""
     },

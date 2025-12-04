@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "EWS - Power, CANbus and USB HAT for 3D Printers")
-		(date "2025-12-03")
-		(rev "1.0")
+		(date "2025-12-04")
+		(rev "0.1")
 		(company "Eduard Iten")
 	)
 	(lib_symbols
@@ -4663,6 +4663,16 @@
 		)
 		(uuid "fe4e382e-54b0-4105-a8d9-226a722cf379")
 	)
+	(label "SOC CAN TX"
+		(at 200.66 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "214d7379-127b-4db6-8fcf-3f2477533560")
+	)
 	(label "uC USART TX"
 		(at 148.59 92.71 0)
 		(effects
@@ -4722,6 +4732,16 @@
 			(justify right bottom)
 		)
 		(uuid "a57ea6e3-2562-4314-baed-100a0783cc61")
+	)
+	(label "SOC CAN RX"
+		(at 200.66 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f689f4b7-4d83-4f1c-9a1c-9d2eb7fb5468")
 	)
 	(global_label "CAN_TX"
 		(shape output)

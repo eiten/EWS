@@ -15,6 +15,7 @@ Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B z
 - [🔌 Universal Voron Power & CAN HAT (EWS)](#-universal-voron-power--can-hat-ews)
   - [📚 Inhalt](#-inhalt)
   - [🎯 Über EWS](#-über-ews)
+  - [🚨 Gelöste Probleme](#-gelöste-probleme)
   - [✨ Features](#-features)
     - [🔋 Stromversorgung (24V Eingang)](#-stromversorgung-24v-eingang)
     - [⚡ DC/DC Wandler (5V Ausgang)](#-dcdc-wandler-5v-ausgang)
@@ -43,6 +44,36 @@ Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B z
 **EWS** steht für "Eierlegende Wollmilchsau" - ein humorvoller Begriff für eine Universallösung, die alles kann. Dieses HAT wird seinem Spitznamen gerecht, indem es mehrere essentielle Funktionen für Voron 3D-Drucker-Steuerungssysteme in einem einzigen, kompakten Board vereint.
 
 Das Board adressiert häufige Problemstellen in Voron-Builds durch robuste Stromverteilung, zuverlässige CAN-Kommunikation und praktische USB-Konnektivität bei gleichzeitiger Kompatibilität mit Raspberry Pi und Radxa Rock 5B Single-Board-Computern.
+
+## 🚨 Gelöste Probleme
+
+Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häufig bei Hochleistungs-3D-Drucker-Setups auftreten:
+
+### ⚡ **Strom- & Versorgungsprobleme**
+- **Instabile SBC-Stromversorgung** - Viele Setups leiden unter Spannungsabfällen und Strominstabilität
+- **Separate Power Injection erforderlich** - USB-C-Touchscreens benötigen oft zusätzliche Netzteile
+- **Komplexe Stromverteilung** - Mehrere Stromquellen erschweren die Verkabelung
+
+### 🔗 **CAN-Kommunikationsprobleme**
+- **USB-CAN-Adapter** - Schwer zu montieren, unzuverlässige Verbindungen, zusätzliche Fehlerquellen
+- **Controller-Board-Limitationen** - Spider/Octopus als CAN-Bridge haben oft eingebaute Abschlusswiderstände
+- **CAN-Topologie-Konflikte** - CAN-Toolheads und ADXL-Boards können nicht gleichzeitig an vielen Controller-Boards betrieben werden
+- **Native CAN nicht verfügbar** - Die meisten SBC-Setups nutzen keine nativen CAN-Interfaces
+
+### 🔥 **Sicherheitsbedenken**
+- **Brandgefahr durch Thermal Runaway** - Keine Möglichkeit, Toolhead-Strom bei Notfällen zu trennen
+- **Unkontrollierte Stromversorgung** - Toolheads bleiben auch bei Fehlern unter Strom
+- **Begrenzte Notabschaltung** - Schwierig, umfassende Sicherheitsabschaltungen zu implementieren
+
+### 🔌 **Verkabelung & Installation**
+- **Komplexes Kabelmanagement** - CAN und 24V-Strom beginnen an verschiedenen Stellen
+- **Mehrere Anschlusspunkte** - Erhöht Fehlermöglichkeiten und Installationskomplexität
+- **Unzureichende Steckernormen** - Mix verschiedener Steckertypen schafft Verwirrung
+
+### 🖥️ **USB- & Peripherie-Probleme**
+- **Begrenzte USB-Anschlüsse** - SBCs haben oft unzureichende Hochleistungs-USB-Konnektivität
+- **USB-Hub-Limitationen** - Externe Hubs erhöhen Komplexität und potentielle Fehlerquellen
+- **Power-Delivery-Standards** - Inkonsistente USB-C-Stromversorgung für moderne Touchscreens
 
 ## ✨ Features
 
@@ -147,10 +178,6 @@ sensor_mcu: hat
 ### USB Anschlüsse
 - **USB-C:** Touchscreen-Verbindung (5V/3A Fähigkeit)
 - **USB-A:** Webcam-Verbindung (vertikale Montage)
-- **JST-XH Intern:** 5V, D-, D+, GND
-
-### Lüftersteuerung
-- **JST-XH 2-pin:** Lüftersteuerung (Pin 1: +5V, Pin 2: GND/PWM)
 
 ## 🛠️ PCB Spezifikationen
 
@@ -172,7 +199,7 @@ sensor_mcu: hat
 
 ### PCB-Fertigung
 - **Kupferdicke:** **2oz Kupfer empfohlen** für verbesserte thermische Leistung und Strombelastbarkeit
-- **Via-Spezifikationen:** Minimum 12-20 Vias am DC/DC-Ausgang für Thermal Management
+- **Via-Spezifikationen:** Minimum 12-20 Vias am DC/DC PGND für Thermal Management
 - **Impedanzkontrolle:** 90 Ω Differentiell für USB-Leiterbahnen (D+/D- Paare)
 
 ### Bestückungshinweise
