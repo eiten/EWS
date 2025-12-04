@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "EWS - Power, CANbus and USB HAT for 3D Printers")
-		(date "2025-12-03")
-		(rev "1.0")
+		(date "2025-12-04")
+		(rev "0.1")
 		(company "Eduard Iten")
 	)
 	(lib_symbols
