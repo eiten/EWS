@@ -1,0 +1,104 @@
+/dts-v1/;
+#include <st/g0/stm32g0b1Xb.dtsi>
+#include <st/g0/stm32g0b1k(b-c-e)ux-pinctrl.dtsi>
+
+/ {
+	model = "EWS Board STM32G0B1KBU6";
+	compatible = "ews,ews-board";
+
+	chosen {
+		zephyr,console = &cdc_acm_uart0;
+		zephyr,shell-uart = &cdc_acm_uart0;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+		zephyr,canbus = &fdcan1;
+	};
+
+	leds {
+		compatible = "gpio-leds";
+		status_led: led_0 {
+			gpios = <&gpiob 4 GPIO_ACTIVE_HIGH>;
+			label = "Status LED";
+		};
+	};
+
+	pfets {
+		compatible = "gpio-leds";
+		pfet1: pfet_1 {
+			gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
+			label = "PFET1 Control";
+		};
+		pfet2: pfet_2 {
+			gpios = <&gpiob 2 GPIO_ACTIVE_HIGH>;
+			label = "PFET2 Control";
+		};
+	};
+
+	aliases {
+		led0 = &status_led;
+		pfet0 = &pfet1;
+		pfet1 = &pfet2;
+	};
+};
+
+&clk_hsi {
+	status = "okay";
+};
+
+&pll {
+	div-m = <1>;
+	mul-n = <8>;
+	div-q = <2>;
+	div-r = <2>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(64)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+};
+
+&fdcan1 {
+	pinctrl-0 = <&fdcan1_rx_pb0 &fdcan1_tx_pb1>;
+	pinctrl-names = "default";
+	bus-speed = <500000>;
+	bus-speed-data = <2000000>;
+	status = "okay";
+};
+
+&usb {
+	pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+	pinctrl-names = "default";
+	status = "okay";
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};
+
+&gpioa {
+	status = "okay";
+};
+
+&gpiob {
+	status = "okay";
+};
+
+&flash0 {
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		boot_partition: partition@0 {
+			label = "mcuboot";
+			reg = <0x00000000 0x00002000>;
+		};
+		slot0_partition: partition@2000 {
+			label = "image-0";
+			reg = <0x00002000 0x0001E000>;
+		};
+	};
+};
