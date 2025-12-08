@@ -1,102 +1,160 @@
+/*
+ * Copyright (c) 2024 EWS Board
+ * Based on STM32G0B1RE-NUCLEO
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
 /dts-v1/;
-#include <st/g0/stm32g0b1Xb.dtsi>
-#include <st/g0/stm32g0b1k(b-c-e)ux-pinctrl.dtsi>
+#include <st/g0/stm32g0b1Xe.dtsi>
+#include <st/g0/stm32g0b1r(b-c-e)tx-pinctrl.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
-	model = "EWS Board STM32G0B1KBU6";
-	compatible = "ews,ews";
+    model = "EWS STM32G0B1KBU6 board";
+    compatible = "st,stm32g0b1kb-ews";
 
-	chosen {
-		zephyr,console = &cdc_acm_uart0;
-		zephyr,shell-uart = &cdc_acm_uart0;
-		zephyr,sram = &sram0;
-		zephyr,flash = &flash0;
-		zephyr,canbus = &fdcan2;
-	};
+    chosen {
+        zephyr,console = &usart1;
+        zephyr,shell-uart = &usart1;
+        zephyr,uart-mcumgr = &usart1;
+        zephyr,sram = &sram0;
+        zephyr,flash = &flash0;
+        zephyr,code-partition = &slot0_partition;
+        zephyr,canbus = &fdcan2;
+    };
 
-	leds {
-		compatible = "gpio-leds";
-		status_led: led_0 {
-			gpios = <&gpiob 4 GPIO_ACTIVE_HIGH>;
-			label = "Status LED";
-		};
-	};
+    leds: leds {
+        compatible = "gpio-leds";
+        status_led: led_0 {
+            gpios = <&gpiob 4 GPIO_ACTIVE_HIGH>;
+            label = "Status LED";
+        };
+    };
 
-	pfets {
-		compatible = "gpio-leds";
-		pfet1: pfet_1 {
-			gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
-			label = "PFET1 Control";
-		};
-		pfet2: pfet_2 {
-			gpios = <&gpiob 2 GPIO_ACTIVE_HIGH>;
-			label = "PFET2 Control";
-		};
-	};
+    gpio_keys {
+        compatible = "gpio-keys";
+        pfet1: pfet1 {
+            label = "PFET1";
+            gpios = <&gpioa 8 GPIO_ACTIVE_HIGH>;
+            zephyr,code = <INPUT_KEY_1>;
+        };
+        pfet2: pfet2 {
+            label = "PFET2";  
+            gpios = <&gpiob 2 GPIO_ACTIVE_HIGH>;
+            zephyr,code = <INPUT_KEY_2>;
+        };
+    };
 
-	aliases {
-		led0 = &status_led;
-		pfet0 = &pfet1;
-		pfet1 = &pfet2;
-	};
+    aliases {
+        led0 = &status_led;
+        pfet0 = &pfet1;
+        pfet1 = &pfet2;
+        watchdog0 = &iwdg;
+        die-temp0 = &die_temp;
+        volt-sensor0 = &vref;
+        volt-sensor1 = &vbat;
+    };
+};
+
+&clk_lsi {
+    status = "okay";
 };
 
 &clk_hsi {
-	status = "okay";
+    status = "okay";
+};
+
+&clk_hsi48 {
+    status = "okay";
+    crs-usb-sof;
 };
 
 &pll {
-	div-m = <1>;
-	mul-n = <8>;
-	div-q = <2>;
-	div-r = <2>;
-	clocks = <&clk_hsi>;
-	status = "okay";
+    div-m = <1>;
+    mul-n = <8>;
+    div-p = <2>;
+    div-q = <2>;
+    div-r = <2>;
+    clocks = <&clk_hsi>;
+    status = "okay";
 };
 
 &rcc {
-	clocks = <&pll>;
-	clock-frequency = <DT_FREQ_M(64)>;
-	ahb-prescaler = <1>;
-	apb1-prescaler = <1>;
+    clocks = <&pll>;
+    clock-frequency = <DT_FREQ_M(64)>;
+    ahb-prescaler = <1>;
+    apb1-prescaler = <1>;
+};
+
+zephyr_udc0: &usb {
+    pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
+    pinctrl-names = "default";
+    status = "okay";
+};
+
+&usart1 {
+    pinctrl-0 = <&usart1_tx_pc4 &usart1_rx_pc5>;
+    pinctrl-names = "default";
+    current-speed = <115200>;
+    status = "okay";
+};
+
+&rtc {
+    clocks = <&rcc STM32_CLOCK(APB1, 10)>,
+             <&rcc STM32_SRC_LSI RTC_SEL(2)>;
+    status = "okay";
+};
+
+&iwdg {
+    status = "okay";
 };
 
 &fdcan2 {
-	pinctrl-0 = <&fdcan2_rx_pb0 &fdcan2_tx_pb1>;
-	pinctrl-names = "default";
-	status = "okay";
+    clocks = <&rcc STM32_CLOCK(APB1, 12)>,
+             <&rcc STM32_SRC_PLL_Q FDCAN_SEL(1)>;
+    pinctrl-0 = <&fdcan2_rx_pb0 &fdcan2_tx_pb1>;
+    pinctrl-names = "default";
+    status = "okay";
 };
 
-&usb {
-	pinctrl-0 = <&usb_dm_pa11 &usb_dp_pa12>;
-	pinctrl-names = "default";
-	status = "okay";
-	cdc_acm_uart0: cdc_acm_uart0 {
-		compatible = "zephyr,cdc-acm-uart";
-	};
+&die_temp {
+    status = "okay";
 };
 
-&gpioa {
-	status = "okay";
+&vref {
+    status = "okay";
 };
 
-&gpiob {
-	status = "okay";
+&vbat {
+    status = "okay";
 };
 
 &flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
 
-		boot_partition: partition@0 {
-			label = "mcuboot";
-			reg = <0x00000000 0x00002000>;
-		};
-		slot0_partition: partition@2000 {
-			label = "image-0";
-			reg = <0x00002000 0x0001E000>;
-		};
-	};
+        boot_partition: partition@0 {
+            label = "mcuboot";
+            reg = <0x00000000 DT_SIZE_K(16)>;
+            read-only;
+        };
+
+        slot0_partition: partition@4000 {
+            label = "image-0";
+            reg = <0x00004000 DT_SIZE_K(96)>;
+        };
+
+        slot1_partition: partition@1c000 {
+            label = "image-1";
+            reg = <0x0001c000 DT_SIZE_K(16)>;
+        };
+    };
+};
+
+stm32_lp_tick_source: &lptim1 {
+    clocks = <&rcc STM32_CLOCK(APB1, 31)>,
+             <&rcc STM32_SRC_LSI LPTIM1_SEL(1)>;
+    status = "okay";
 };

@@ -1,0 +1,2 @@
+# Load board Kconfig descriptions.
+osource "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews/Kconfig.ews"

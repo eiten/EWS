@@ -6,12 +6,12 @@
 #include <zephyr/kernel.h>
 #include <zephyr/device.h>
 #include <zephyr/drivers/gpio.h>
-#include <zephyr/usb/usb_device.h>
 #include <zephyr/logging/log.h>
 
 #include "cdc_handler.h"
 #include "pfet_control.h"
 #include "gs_usb_can.h"
+#include "usb_gs_usb_class.h"
 
 LOG_MODULE_REGISTER(main, LOG_LEVEL_DBG);
 
@@ -44,10 +44,10 @@ int main(void)
         return ret;
     }
 
-    /* Initialize USB composite device */
-    ret = usb_enable(NULL);
+    /* Initialize USB gs_usb class */
+    ret = usb_gs_usb_init();
     if (ret != 0) {
-        LOG_ERR("Failed to enable USB: %d", ret);
+        LOG_ERR("Failed to initialize USB gs_usb: %d", ret);
         return ret;
     }
 

@@ -11,4 +11,5 @@ target_sources(app PRIVATE
     src/cdc_handler.c
     src/pfet_control.c
     src/gs_usb_can.c
+    src/usb_gs_usb_class.c
 )

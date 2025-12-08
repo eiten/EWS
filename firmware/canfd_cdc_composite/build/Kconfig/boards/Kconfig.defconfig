@@ -1,0 +1,2 @@
+# Load Zephyr board defconfig descriptions.
+osource "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews/Kconfig.defconfig"

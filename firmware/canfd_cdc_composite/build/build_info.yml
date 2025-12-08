@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite'
+    source-dir: 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite'
+  board:
+    name: 'ews'
+    path:
+     - 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews'
+    qualifiers: 'stm32g0b1xx'
+    revision: ''
+  devicetree:
+    bindings-dirs:
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/bindings'
+    files:
+     - 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews/ews.dts'
+    include-dirs:
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/ambiq/dts'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/atmel/include'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/bouffalolab/include'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/bouffalolab/include/zephyr'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/gigadevice/include'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/microchip/include'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/microchip/dts'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/nuvoton/dts'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/nxp/dts'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/stm32/dts'
+     - 'C:/Users/iteedi/zephyrproject/modules/hal/ti/dts'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/include'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/include/zephyr'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/common'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/vendor'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/rx'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/x86'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/xtensa'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/sparc'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/riscv'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/posix'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/arm64'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/arm'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts/arc'
+     - 'C:/Users/iteedi/zephyrproject/zephyr/dts'
+  kconfig:
+    files:
+     - 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews/ews_defconfig'
+     - 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf'
+    user-files:
+     - 'C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf'
+  toolchain:
+    name: 'zephyr'
+    path: 'C:/Users/iteedi/zephyr-sdk-0.17.4'
+  zephyr:
+    version: '4.3.0'
+    zephyr-base: 'C:/Users/iteedi/zephyrproject/zephyr'
+version: '0.1.0'
+west:
+  command: 'C:\Users\iteedi\zephyrproject\.venv\Scripts\west build -p always -b ews'
+  topdir: 'C:\Users\iteedi\zephyrproject'
+  version: '1.4.0'

@@ -15,10 +15,10 @@
 
 LOG_MODULE_REGISTER(cdc_handler, LOG_LEVEL_DBG);
 
-#define CDC_DEVICE_NAME "CDC_ACM_0"
-#define RX_BUF_SIZE 64
+/* Use UART device for PFET control (not CDC over USB) */
+static const struct device *cdc_dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_console));
 
-static const struct device *cdc_dev;
+#define RX_BUF_SIZE 64
 static char rx_buf[RX_BUF_SIZE];
 static int rx_pos = 0;
 
@@ -48,14 +48,15 @@ static void process_command(char *cmd)
     }
     
     /* Send response */
-    uart_poll_out_string(cdc_dev, response);
+    for (int i = 0; i < strlen(response); i++) {
+        uart_poll_out(cdc_dev, response[i]);
+    }
 }
 
 int cdc_handler_init(void)
 {
-    cdc_dev = device_get_binding(CDC_DEVICE_NAME);
-    if (!cdc_dev) {
-        LOG_ERR("CDC ACM device not found");
+    if (!device_is_ready(cdc_dev)) {
+        LOG_ERR("CDC ACM device not ready");
         return -ENODEV;
     }
 
@@ -65,10 +66,10 @@ int cdc_handler_init(void)
 
 void cdc_handler_process(void)
 {
-    char c;
+    unsigned char c;
     
     /* Check for incoming characters */
-    while (uart_poll_in(cdc_dev, (unsigned char *)&c) == 0) {
+    while (uart_poll_in(cdc_dev, &c) == 0) {
         if (c == '\n' || c == '\r') {
             /* End of command */
             if (rx_pos > 0) {
@@ -78,7 +79,7 @@ void cdc_handler_process(void)
             }
         } else if (rx_pos < (RX_BUF_SIZE - 1)) {
             /* Add character to buffer */
-            rx_buf[rx_pos++] = c;
+            rx_buf[rx_pos++] = (char)c;
         } else {
             /* Buffer full, reset */
             rx_pos = 0;
