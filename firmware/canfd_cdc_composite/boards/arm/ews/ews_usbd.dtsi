@@ -1,0 +1,42 @@
+/*
+ * USB Device Tree Configuration for Next Generation USB Device Stack
+ */
+
+/ {
+    usbd: usbd {
+        compatible = "zephyr,usbd";
+        status = "okay";
+        
+        gs_config: config {
+            compatible = "zephyr,usbd-configuration";
+            configuration-value = <1>;
+            max-power = <100>;
+            self-powered;
+            
+            gs_interface: interface {
+                compatible = "zephyr,usbd-interface";
+                interface-number = <0>;
+                alternate-setting = <0>;
+                class-code = <255>; // USB_BCC_VENDOR
+                subclass-code = <0>;
+                protocol-code = <0>;
+                
+                gs_bulk_out: bulk_out {
+                    compatible = "zephyr,usbd-bulk";
+                    endpoint-address = <0x01>;
+                    max-packet-size = <64>;
+                };
+                
+                gs_bulk_in: bulk_in {
+                    compatible = "zephyr,usbd-bulk";
+                    endpoint-address = <0x81>;
+                    max-packet-size = <64>;
+                };
+            };
+        };
+    };
+};
+
+&usb {
+    usbd;
+};

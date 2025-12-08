@@ -53,6 +53,6 @@ cmake:
     zephyr-base: 'C:/Users/iteedi/zephyrproject/zephyr'
 version: '0.1.0'
 west:
-  command: 'C:\Users\iteedi\zephyrproject\.venv\Scripts\west build -p always -b ews'
+  command: 'C:\Users\iteedi\zephyrproject\.venv\Scripts\west build --pristine'
   topdir: 'C:\Users\iteedi\zephyrproject'
   version: '1.4.0'
