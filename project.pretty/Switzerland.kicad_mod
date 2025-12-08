@@ -1,0 +1,130 @@
+(footprint "Switzerland"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -0.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "4d744c5a-7c16-4740-a330-ac79a71733e3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "Switzerland"
+		(at -0.2 2.55 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c20dca1d-d535-4261-911f-5f7e77721b0a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a7ed8506-c593-4125-99cc-fbdf2743ef18")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c9140229-63ac-4351-8a7f-1d0664f42600")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_rect
+		(start -1.6 -1.6)
+		(end 1.6 1.6)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "83c2a285-ba1e-4eb6-817f-830894ea4be3")
+	)
+	(fp_poly
+		(pts
+			(xy -1 0.3) (xy -1 -0.3) (xy -0.3 -0.3) (xy -0.3 -1) (xy 0.3 -1) (xy 0.3 -0.3) (xy 1 -0.3) (xy 1 0.3)
+			(xy 0.3 0.3) (xy 0.3 1) (xy -0.3 1) (xy -0.3 0.3)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "c5027102-92e8-42b5-a1c8-8003553902e1")
+	)
+	(fp_rect
+		(start -22.5 -1.6)
+		(end 1.6 1.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "986d2556-45c7-4b49-9518-78bdc7680548")
+	)
+	(fp_text user "engineered in Switzerland"
+		(at -2.3 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3321ce3d-a75c-458d-ab7c-ce4c78c5b34c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify right)
+		)
+	)
+	(fp_text user "${REFERENCE}"
+		(at -4.6 0.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "18348afd-9338-456d-b66f-be37a947382c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(group ""
+		(uuid "1c4ad302-7fa2-4ed8-bb92-0cc93be9ace1")
+		(members "18348afd-9338-456d-b66f-be37a947382c" "3321ce3d-a75c-458d-ab7c-ce4c78c5b34c"
+			"83c2a285-ba1e-4eb6-817f-830894ea4be3" "986d2556-45c7-4b49-9518-78bdc7680548"
+			"c5027102-92e8-42b5-a1c8-8003553902e1"
+		)
+	)
+	(group ""
+		(uuid "86eef173-2068-44cb-8e06-cbb69f08279e")
+		(members "1c4ad302-7fa2-4ed8-bb92-0cc93be9ace1")
+	)
+	(embedded_fonts no)
+)

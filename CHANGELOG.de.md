@@ -1,0 +1,45 @@
+# Changelog
+
+> 🌍 **Sprachen:** [English](CHANGELOG.md) | [Deutsch](CHANGELOG.de.md)
+
+Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert.
+
+Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
+und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
+
+## [Rev. 0.2] - 2025-12-08
+
+### Verbesserungen
+- **Schaltplan:** Aufgeräumt und strukturiert (Dank an "shx")
+- **CAN-Transceiver:** Silent Pin auf GND gelegt für bessere Stabilität (Dank an "shx")
+
+### Hinzugefügt
+- **Status-LEDs:** 
+  - Gelbe LEDs für 24V, 5V und 3.3V Spannungsanzeige
+  - Grüne LED am Mikrocontroller (Pin PB4)
+- **Solder Jumper:** Ersatz der Standard-Jumper durch Solder Jumper auf der Unterseite
+- **PFET-Steuerung:** Jumper für Ausgangs-PFETs hinzugefügt - ermöglicht Dauer-Ein ohne Firmware
+- **Testpunkte:** Robuste Testpunkte für 5V und GND für Lasttests eingefügt
+- **Heatsink:** Optionaler Heatsink für DC/DC-Wandler auf der Unterseite
+- **MCU-Kondensator:** 10µF Kondensator für Mikrocontroller an der 3.3V-Schiene
+
+### Geändert
+- **Produktion:** Alle LCSC-Bestellnummern eingefügt, Rotationen definiert, Produktionsdaten erstellt
+- **PCB Layout:** 
+  - Entsprechend der Schaltplanänderungen angepasst
+  - Taster besser positioniert
+- **BOM optimiert:**
+  - 30kΩ durch Basic-Part 33kΩ ersetzt
+  - 15.5kΩ am DC/DC-Feedback durch 15kΩ ersetzt → neue Ausgangsspannung: 5.1V
+- **CAN-ESD-Schutz:** NUP2105L durch PESD1CAN ersetzt (bessere Eignung)
+- **CAN-Abschlusswiderstand:** Bauform von 0402 auf 0603 geändert für ausreichende Leistung
+- **USB-Hub:** Speisung von 5V auf 3.3V umgestellt (gemäß Datenblatt-Empfehlung)
+
+### Technische Details
+- **DC/DC-Ausgang:** Neue Spannung 5.1V statt 5.25V durch Feedback-Widerstand-Änderung
+- **Verbesserte Wärmeableitung:** Optionaler Heatsink auf Unterseite
+- **Stabilere CAN-Kommunikation:** Durch ESD-Schutz-Upgrade und Widerstand-Optimierung
+
+---
+
+> **Hinweis:** Dies ist die Originaldokumentation in deutscher Sprache. Eine englische Übersetzung finden Sie in [CHANGELOG.md](CHANGELOG.md).

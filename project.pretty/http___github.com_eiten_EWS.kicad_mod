@@ -6206,5 +6206,16 @@
 		(layer "F.CrtYd")
 		(uuid "1a1c2516-9a4d-4625-a8a9-8db4fd03f878")
 	)
+	(fp_rect
+		(start -10 -10)
+		(end 10 10)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d12b1aff-30f7-47cc-ae6d-1ad5bf015cf0")
+	)
 	(embedded_fonts no)
 )
