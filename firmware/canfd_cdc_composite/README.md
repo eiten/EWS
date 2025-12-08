@@ -34,7 +34,7 @@ A Zephyr-based firmware for the EWS board that provides:
 ## Building
 
 ```bash
-west build -b ews_board
+west build -b ews
 ```
 
 ## CDC Protocol

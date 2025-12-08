@@ -43,5 +43,5 @@ The board supports programming via:
 ## Building Firmware
 
 ```bash
-west build -b ews_board
+west build -b ews
 ```

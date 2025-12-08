@@ -4,7 +4,7 @@
 
 / {
 	model = "EWS Board STM32G0B1KBU6";
-	compatible = "ews,ews-board";
+	compatible = "ews,ews";
 
 	chosen {
 		zephyr,console = &cdc_acm_uart0;
