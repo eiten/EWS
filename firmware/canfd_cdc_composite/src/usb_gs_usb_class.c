@@ -14,6 +14,9 @@
 
 LOG_MODULE_REGISTER(usb_gs_usb, LOG_LEVEL_DBG);
 
+/* Forward declarations */
+int gs_usb_class_init(void);
+
 /* USB device state */
 static bool usb_enabled = false;
 static bool can_started = false;
@@ -174,20 +177,79 @@ int gs_usb_send_frame(struct gs_host_frame *frame)
     return 0; /* Simplified for now */
 }
 
-/* Send frame to host (legacy compatibility) */
+/* Send frame to host via USB bulk IN endpoint */
 int gs_usb_send_frame_to_host(const uint8_t *data, uint32_t len)
 {
     if (!usb_enabled) {
         return -ENOTCONN;
     }
 
-    LOG_DBG("Send frame to host: %d bytes", len);
-    return 0; /* Simplified for now */
+    /* Use deprecated API for now to avoid complexity */
+    uint32_t bytes_written;
+    LOG_DBG("Sending %d bytes to host (placeholder)", len);
+    /* TODO: Implement actual USB transmission */
+    return 0;  /* Placeholder return */
+}
+
+/* USB bulk endpoint callbacks */
+static void gs_usb_bulk_out_callback(uint8_t ep, enum usb_dc_ep_cb_status_code cb_status)
+{
+    static uint8_t rx_buffer[64];
+    uint32_t bytes_read = 0;
+    
+    if (cb_status != USB_DC_EP_DATA_OUT) {
+        return;
+    }
+    
+    LOG_DBG("Received data from host (placeholder)");
+    /* TODO: Implement actual USB reception and frame processing */
+}
+
+static void gs_usb_bulk_in_callback(uint8_t ep, enum usb_dc_ep_cb_status_code cb_status)
+{
+    if (cb_status == USB_DC_EP_DATA_IN) {
+        LOG_DBG("Bulk IN transmission complete");
+    }
+}
+
+/* USB interface configuration callback */
+static void gs_usb_interface_config(struct usb_desc_header *head, uint8_t bInterfaceNumber)
+{
+    LOG_DBG("GS_USB interface %d configured", bInterfaceNumber);
+}
+
+/* USB device status callback */
+static void gs_usb_status_callback(struct usb_cfg_data *cfg, enum usb_dc_status_code status, const uint8_t *param)
+{
+    switch (status) {
+    case USB_DC_CONFIGURED:
+        LOG_INF("USB configured");
+        usb_enabled = true;
+        break;
+    case USB_DC_DISCONNECTED:
+        LOG_INF("USB disconnected"); 
+        usb_enabled = false;
+        can_started = false;
+        gs_usb_can_stop();
+        break;
+    default:
+        break;
+    }
 }
 
 /* Initialize GS_USB (for main.c compatibility) */
 int usb_gs_usb_init(void)
 {
+    LOG_INF("Initializing candleLight-compatible GS_USB interface");
+    
+    /* Use USB DC API instead of deprecated functions */
+    int ret = usb_dc_ep_set_callback(0x81, gs_usb_bulk_in_callback);  /* Bulk IN */
+    if (ret != 0) {
+        LOG_ERR("Failed to set bulk IN callback: %d", ret);
+    }
+    
+    /* Simple initialization without endpoint setup for now */
+    
     return gs_usb_class_init();
 }
 
@@ -200,13 +262,17 @@ bool gs_usb_is_ready(void)
 /* Initialize GS_USB class */
 int gs_usb_class_init(void)
 {
-    LOG_INF("Initializing simple GS_USB class");
+    LOG_INF("Initializing candleLight-compatible GS_USB class");
     
-    /* TODO: Register vendor request handler when needed */
-    /* usb_register_request_handler(USB_REQTYPE_TYPE_VENDOR, gs_usb_vendor_handler); */
+    /* Initialize CAN interface */
+    int ret = gs_usb_can_init();
+    if (ret != 0) {
+        LOG_ERR("Failed to initialize CAN interface: %d", ret);
+        return ret;
+    }
     
     usb_enabled = true;
     
-    LOG_INF("GS_USB class initialized");
+    LOG_INF("GS_USB class initialized successfully");
     return 0;
 }

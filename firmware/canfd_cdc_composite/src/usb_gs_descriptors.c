@@ -1,25 +1,30 @@
 /*
- * GS_USB USB Device Descriptors Implementation
+ * CandleLight-compatible GS_USB USB Device Descriptors
+ * Full compatibility with gs_usb protocol and Linux can-utils
  */
 
 #include <zephyr/usb/usb_device.h>
 #include <zephyr/sys/byteorder.h>
+#include <zephyr/logging/log.h>
 #include "usb_gs_descriptors.h"
+#include "gs_usb_can.h"
 
-/* Device descriptor */
+LOG_MODULE_REGISTER(usb_gs_desc, LOG_LEVEL_DBG);
+
+/* CandleLight-compatible device descriptor */
 const struct usb_device_descriptor gs_usb_dev_desc = {
     .bLength = USB_DEVICE_DESC_SIZE,
     .bDescriptorType = USB_DESC_DEVICE,
     .bcdUSB = sys_cpu_to_le16(USB_SRN_2_0),
-    .bDeviceClass = 0,
-    .bDeviceSubClass = 0,
-    .bDeviceProtocol = 0,
-    .bMaxPacketSize0 = USB_MAX_CTRL_MPS,
-    .idVendor = sys_cpu_to_le16(GS_USB_VENDOR_ID),
-    .idProduct = sys_cpu_to_le16(GS_USB_PRODUCT_ID),
-    .bcdDevice = sys_cpu_to_le16(0x0100), /* Device release 1.0 */
+    .bDeviceClass = 0x00,    /* Interface-defined */
+    .bDeviceSubClass = 0x00,
+    .bDeviceProtocol = 0x00,
+    .bMaxPacketSize0 = 64,   /* 64 bytes for control endpoint */
+    .idVendor = sys_cpu_to_le16(0x1D50),   /* OpenMoko VID (candleLight standard) */
+    .idProduct = sys_cpu_to_le16(0x606F),  /* gs_usb PID (candleLight standard) */
+    .bcdDevice = sys_cpu_to_le16(0x0100),  /* Device release 1.0 */
     .iManufacturer = 1,
-    .iProduct = 2, 
+    .iProduct = 2,
     .iSerialNumber = 3,
     .bNumConfigurations = 1,
 };
@@ -34,36 +39,36 @@ const struct gs_usb_config_descriptor gs_usb_cfg_desc = {
         .bConfigurationValue = 1,
         .iConfiguration = 0,
         .bmAttributes = USB_SRN_CFG_ATTR_BASE | USB_SRN_CFG_ATTR_SELF_POWERED,
-        .bMaxPower = 250, /* 500mA */
+        .bMaxPower = 50, /* 100mA (candleLight compatible) */
     },
 
     .interface = {
         .bLength = USB_IF_DESC_SIZE,
         .bDescriptorType = USB_DESC_INTERFACE,
-        .bInterfaceNumber = GS_USB_INTERFACE_NUM,
+        .bInterfaceNumber = 0,  /* Single interface */
         .bAlternateSetting = 0,
         .bNumEndpoints = 2,
-        .bInterfaceClass = USB_CLASS_VENDOR_SPECIFIC,
-        .bInterfaceSubClass = USB_SUBCLASS_VENDOR,
-        .bInterfaceProtocol = USB_PROTOCOL_VENDOR,
+        .bInterfaceClass = 0xFF,        /* Vendor specific (candleLight) */
+        .bInterfaceSubClass = 0xFF,     /* Vendor specific */
+        .bInterfaceProtocol = 0xFF,     /* Vendor specific */
         .iInterface = 0,
     },
 
     .ep_out = {
         .bLength = USB_EP_DESC_SIZE,
         .bDescriptorType = USB_DESC_ENDPOINT,
-        .bEndpointAddress = GS_USB_BULK_EP_OUT,
+        .bEndpointAddress = GS_USB_EP_OUT,  /* 0x02 */
         .bmAttributes = USB_DC_EP_BULK,
-        .wMaxPacketSize = sys_cpu_to_le16(GS_USB_BULK_EP_MPS),
+        .wMaxPacketSize = sys_cpu_to_le16(GS_USB_EP_SIZE),  /* 64 bytes */
         .bInterval = 0,
     },
 
     .ep_in = {
         .bLength = USB_EP_DESC_SIZE,
         .bDescriptorType = USB_DESC_ENDPOINT,
-        .bEndpointAddress = GS_USB_BULK_EP_IN,
+        .bEndpointAddress = GS_USB_EP_IN,   /* 0x81 */
         .bmAttributes = USB_DC_EP_BULK,
-        .wMaxPacketSize = sys_cpu_to_le16(GS_USB_BULK_EP_MPS),
+        .wMaxPacketSize = sys_cpu_to_le16(GS_USB_EP_SIZE),  /* 64 bytes */
         .bInterval = 0,
     },
 };

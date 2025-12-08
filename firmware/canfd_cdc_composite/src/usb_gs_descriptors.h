@@ -8,20 +8,14 @@
 
 #include <zephyr/usb/usb_device.h>
 
-/* GS_USB specific USB descriptor values */
-#define GS_USB_VENDOR_ID    0x1d50  /* OpenMoko vendor ID */
-#define GS_USB_PRODUCT_ID   0x606f  /* gs_usb device ID */
+/* GS_USB specific USB descriptor values (candleLight compatible) */
+#define GS_USB_VENDOR_ID    0x1d50  /* OpenMoko vendor ID (official) */
+#define GS_USB_PRODUCT_ID   0x606f  /* gs_usb device ID (official) */
 
-/* Interface and endpoint configuration */
-#define GS_USB_INTERFACE_NUM     0
-#define GS_USB_BULK_EP_OUT      0x01
-#define GS_USB_BULK_EP_IN       0x81
-#define GS_USB_BULK_EP_MPS      64
-
-/* USB Class codes for vendor specific interface */
-#define USB_CLASS_VENDOR_SPECIFIC   0xFF
-#define USB_SUBCLASS_VENDOR         0xFF  
-#define USB_PROTOCOL_VENDOR         0xFF
+/* USB Endpoint addresses (candleLight standard) */
+#define GS_USB_EP_IN        0x81    /* Bulk IN endpoint */
+#define GS_USB_EP_OUT       0x02    /* Bulk OUT endpoint */
+#define GS_USB_EP_SIZE      64      /* Endpoint packet size */
 
 /* USB descriptor structures */
 struct gs_usb_config_descriptor {

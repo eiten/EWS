@@ -265,7 +265,7 @@ int gs_usb_can_send_frame(const struct can_frame *frame)
 }
 
 /* Handle incoming gs_usb frames from host */
-int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame)
+void gs_usb_process_host_frame(const struct gs_host_frame *gs_frame)
 {
     struct can_frame frame = {0};
     int ret;
@@ -315,8 +315,6 @@ int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame)
         error_frame.flags |= GS_CAN_FLAG_ERROR;
         gs_usb_send_frame_to_host((const uint8_t*)&error_frame, sizeof(error_frame));
     }
-
-    return ret;
 }
 
 /**
@@ -346,3 +344,4 @@ int gs_usb_can_stop(void)
     }
     return ret;
 }
+

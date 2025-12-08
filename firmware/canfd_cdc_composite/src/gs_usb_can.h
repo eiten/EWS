@@ -155,9 +155,8 @@ int gs_usb_can_send_frame(const struct can_frame *frame);
 /**
  * Process incoming gs_usb frame from host
  * @param gs_frame gs_usb frame from host
- * @return 0 on success, negative error code on failure
  */
-int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame);
+void gs_usb_process_host_frame(const struct gs_host_frame *gs_frame);
 
 /**
  * Start CAN interface
