@@ -3,35 +3,44 @@
     "CONFIG_INPUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1
+    ]
   ],
   [
     "CONFIG_WIFI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      2
+    ]
   ],
   [
     "CONFIG_REGULATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      3
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      590
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      4
     ]
   ],
   [
@@ -41,8 +50,8 @@
     "4096",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      31
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      5
     ]
   ],
   [
@@ -52,57 +61,75 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      12
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      6
     ]
   ],
   [
     "CONFIG_SPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      7
+    ]
   ],
   [
     "CONFIG_MIPI_DSI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      8
+    ]
   ],
   [
     "CONFIG_MEMC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      9
+    ]
   ],
   [
     "CONFIG_MODEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      10
+    ]
   ],
   [
     "CONFIG_UART_INTERRUPT_DRIVEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      11
+    ]
   ],
   [
     "CONFIG_GPIO_HOGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      12
+    ]
   ],
   [
     "CONFIG_NUM_IRQS",
@@ -120,10 +147,10 @@
     "y",
     "int",
     "64000000",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      65
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      14
     ]
   ],
   [
@@ -131,10 +158,10 @@
     "y",
     "int",
     "512",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      252
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      15
     ]
   ],
   [
@@ -142,10 +169,10 @@
     "y",
     "hex",
     "0x8000000",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      109
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      16
     ]
   ],
   [
@@ -153,29 +180,32 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.smp",
-      43
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      17
     ]
   ],
   [
     "CONFIG_SOC_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      18
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      18
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      19
     ]
   ],
   [
@@ -183,10 +213,10 @@
     "y",
     "int",
     "256",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      176
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      20
     ]
   ],
   [
@@ -194,10 +224,10 @@
     "y",
     "int",
     "2048",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      185
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      21
     ]
   ],
   [
@@ -205,10 +235,10 @@
     "y",
     "int",
     "10000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      806
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      22
     ]
   ],
   [
@@ -216,10 +246,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      747
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      23
     ]
   ],
   [
@@ -227,10 +257,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      134
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      24
     ]
   ],
   [
@@ -238,10 +268,10 @@
     "y",
     "string",
     "__start",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      206
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      25
     ]
   ],
   [
@@ -249,9 +279,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "CPU_CORTEX_M && ARM"
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      26
     ]
   ],
   [
@@ -268,17 +299,23 @@
     "CONFIG_COUNTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      28
+    ]
   ],
   [
     "CONFIG_SRAM_VECTOR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      29
+    ]
   ],
   [
     "CONFIG_CPU_HAS_ARM_MPU",
@@ -294,35 +331,44 @@
     "CONFIG_SHARED_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      31
+    ]
   ],
   [
     "CONFIG_STM32_FLASH_PREFETCH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      32
+    ]
   ],
   [
     "CONFIG_PM_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      33
+    ]
   ],
   [
     "CONFIG_TICKLESS_KERNEL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      1067
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      34
     ]
   ],
   [
@@ -330,10 +376,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
-      11
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      35
     ]
   ],
   [
@@ -341,56 +387,65 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      96
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      36
     ]
   ],
   [
     "CONFIG_USE_DT_CODE_PARTITION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      37
+    ]
   ],
   [
     "CONFIG_STM32_BACKUP_PROTECTION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig.defconfig",
-      131
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      38
     ]
   ],
   [
     "CONFIG_MULTI_LEVEL_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      39
+    ]
   ],
   [
     "CONFIG_PM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      40
+    ]
   ],
   [
     "CONFIG_NUM_METAIRQ_PRIORITIES",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      94
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      41
     ]
   ],
   [
@@ -398,10 +453,10 @@
     "y",
     "int",
     "15",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      55
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      42
     ]
   ],
   [
@@ -419,48 +474,54 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      529
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      44
     ]
   ],
   [
     "CONFIG_DYNAMIC_INTERRUPTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      45
+    ]
   ],
   [
     "CONFIG_GEN_ISR_TABLES",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      324
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      46
     ]
   ],
   [
     "CONFIG_INIT_STACKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      47
+    ]
   ],
   [
     "CONFIG_TIMESLICE_SIZE",
     "y",
     "int",
     "20",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      672
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      48
     ]
   ],
   [
@@ -468,10 +529,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      106
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      49
     ]
   ],
   [
@@ -479,51 +540,66 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      842
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      50
     ]
   ],
   [
     "CONFIG_INIT_ARCH_HW_AT_BOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      51
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      52
+    ]
   ],
   [
     "CONFIG_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      53
+    ]
   ],
   [
     "CONFIG_POWER_DOMAIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      54
+    ]
   ],
   [
     "CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      55
+    ]
   ],
   [
     "CONFIG_GPIO",
@@ -532,33 +608,42 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/boards/arm/ews/ews_defconfig",
-      4
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      56
     ]
   ],
   [
     "CONFIG_MFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      57
+    ]
   ],
   [
     "CONFIG_CODE_DATA_RELOCATION_SRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      58
+    ]
   ],
   [
     "CONFIG_CACHE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      59
+    ]
   ],
   [
     "CONFIG_LOG",
@@ -567,8 +652,8 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      27
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      60
     ]
   ],
   [
@@ -586,17 +671,23 @@
     "CONFIG_CODE_DATA_RELOCATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      62
+    ]
   ],
   [
     "CONFIG_ROMSTART_RELOCATION_ROM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      63
+    ]
   ],
   [
     "CONFIG_RESET",
@@ -613,10 +704,10 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      587
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      65
     ]
   ],
   [
@@ -624,57 +715,66 @@
     "y",
     "string",
     "",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.misc",
-      124
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      66
     ]
   ],
   [
     "CONFIG_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      67
+    ]
   ],
   [
     "CONFIG_LOG_PROCESS_THREAD_STACK_SIZE",
     "y",
     "int",
     "768",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      91
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      68
     ]
   ],
   [
     "CONFIG_DEVICE_DEPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      69
+    ]
   ],
   [
     "CONFIG_UART_USE_RUNTIME_CONFIGURE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\serial\\Kconfig",
-      53
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      70
     ]
   ],
   [
     "CONFIG_SYSCON",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      71
+    ]
   ],
   [
     "CONFIG_SOC_EARLY_INIT_HOOK",
@@ -693,27 +793,30 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      23
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      73
     ]
   ],
   [
     "CONFIG_WINSTREAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      74
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_MALLOC_ARENA_SIZE",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\common\\Kconfig",
-      64
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      75
     ]
   ],
   [
@@ -731,19 +834,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      576
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      77
     ]
   ],
   [
     "CONFIG_REBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      78
+    ]
   ],
   [
     "CONFIG_GEN_IRQ_START_VECTOR",
@@ -772,10 +878,10 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      541
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      81
     ]
   ],
   [
@@ -793,27 +899,33 @@
     "CONFIG_BOOTLOADER_MCUBOOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      83
+    ]
   ],
   [
     "CONFIG_SCHED_CPU_MASK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      84
+    ]
   ],
   [
     "CONFIG_KERNEL_MEM_POOL",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      748
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      85
     ]
   ],
   [
@@ -821,38 +933,44 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      14
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      86
     ]
   ],
   [
     "CONFIG_OUTPUT_DISASSEMBLY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      87
+    ]
   ],
   [
     "CONFIG_LINKER_USE_RELAX",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      318
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      88
     ]
   ],
   [
     "CONFIG_WATCHDOG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      89
+    ]
   ],
   [
     "CONFIG_ICACHE_LINE_SIZE",
@@ -1243,17 +1361,23 @@
     "CONFIG_BUILD_ONLY_NO_BLOBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      134
+    ]
   ],
   [
     "CONFIG_ACPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      147
+    ]
   ],
   [
     "CONFIG_ZEPHYR_ACPICA_MODULE",
@@ -1303,9 +1427,12 @@
     "CONFIG_CMSIS_DSP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      164
+    ]
   ],
   [
     "CONFIG_ZEPHYR_CMSIS_NN_MODULE",
@@ -1322,9 +1449,12 @@
     "CONFIG_CMSIS_NN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      171
+    ]
   ],
   [
     "CONFIG_ZEPHYR_CMSIS_6_MODULE",
@@ -1351,9 +1481,12 @@
     "CONFIG_CMSIS_M_CHECK_DEVICE_DEFINES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      179
+    ]
   ],
   [
     "CONFIG_ZEPHYR_FATFS_MODULE",
@@ -1436,9 +1569,12 @@
     "CONFIG_ETHOS_U",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      219
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_ETHOS_U_MODULE",
@@ -1477,9 +1613,12 @@
     "CONFIG_USE_INFINEON_ABSTRACTION_RTOS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      233
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_INTEL_MODULE",
@@ -1639,9 +1778,12 @@
     "CONFIG_TDK_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      296
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HAL_TELINK_MODULE",
@@ -1702,9 +1844,12 @@
     "CONFIG_WIFI_NM_WPA_SUPPLICANT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      320
+    ]
   ],
   [
     "CONFIG_ZEPHYR_HOSTAP_MODULE",
@@ -1765,17 +1910,23 @@
     "CONFIG_LIBSBC_ENCODER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      337
+    ]
   ],
   [
     "CONFIG_LIBSBC_DECODER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      338
+    ]
   ],
   [
     "CONFIG_ZEPHYR_LITTLEFS_MODULE",
@@ -1814,9 +1965,12 @@
     "CONFIG_HAS_SEMTECH_RADIO_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      357
+    ]
   ],
   [
     "CONFIG_ZEPHYR_LVGL_MODULE",
@@ -1844,17 +1998,23 @@
     "CONFIG_PSA_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      370
+    ]
   ],
   [
     "CONFIG_MBEDTLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      371
+    ]
   ],
   [
     "CONFIG_ZEPHYR_MCUBOOT_MODULE",
@@ -1893,9 +2053,12 @@
     "CONFIG_NANOPB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      381
+    ]
   ],
   [
     "CONFIG_ZEPHYR_NRF_WIFI_MODULE",
@@ -1912,9 +2075,12 @@
     "CONFIG_NRF70_BUSLIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      388
+    ]
   ],
   [
     "CONFIG_ZEPHYR_OPEN_AMP_MODULE",
@@ -1931,9 +2097,12 @@
     "CONFIG_OPENTHREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      396
+    ]
   ],
   [
     "CONFIG_ZEPHYR_OPENTHREAD_MODULE",
@@ -1950,9 +2119,12 @@
     "CONFIG_PERCEPIO_DFM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      407
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PERCEPIO_MODULE",
@@ -1969,9 +2141,12 @@
     "CONFIG_PICOLIBC_MODULE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      414
+    ]
   ],
   [
     "CONFIG_ZEPHYR_PICOLIBC_MODULE",
@@ -2009,9 +2184,12 @@
     "CONFIG_USE_SEGGER_RTT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      423
+    ]
   ],
   [
     "CONFIG_ZEPHYR_TRUSTED_FIRMWARE_A_MODULE",
@@ -2028,9 +2206,12 @@
     "CONFIG_BUILD_WITH_TFA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      430
+    ]
   ],
   [
     "CONFIG_ZEPHYR_TRUSTED_FIRMWARE_M_MODULE",
@@ -2069,9 +2250,12 @@
     "CONFIG_ZCBOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      449
+    ]
   ],
   [
     "CONFIG_ZEPHYR_NRF_HW_MODELS_MODULE",
@@ -2088,49 +2272,67 @@
     "CONFIG_LIBMETAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      453
+    ]
   ],
   [
     "CONFIG_LVGL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      454
+    ]
   ],
   [
     "CONFIG_HAS_MEC_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      455
+    ]
   ],
   [
     "CONFIG_HAS_MPFS_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      456
+    ]
   ],
   [
     "CONFIG_HAS_MEC5_HAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      457
+    ]
   ],
   [
     "CONFIG_OPENAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      458
+    ]
   ],
   [
     "CONFIG_HAS_STM32CUBE",
@@ -2186,25 +2388,34 @@
     "CONFIG_MIPI_SYST_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      464
+    ]
   ],
   [
     "CONFIG_HAS_TELINK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      465
+    ]
   ],
   [
     "CONFIG_MCUBOOT_BOOTUTIL_LIB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      466
+    ]
   ],
   [
     "CONFIG_BOARD",
@@ -2243,9 +2454,12 @@
     "CONFIG_NET_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      492
+    ]
   ],
   [
     "CONFIG_BOARD_EWS",
@@ -2357,19 +2571,22 @@
     "CONFIG_STM32_ENABLE_DEBUG_SLEEP_STOP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      512
+    ]
   ],
   [
     "CONFIG_SWJ_ANALOG_PRIORITY",
     "y",
     "int",
     "49",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/soc/st/stm32/Kconfig",
-      52
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      513
     ]
   ],
   [
@@ -2386,19 +2603,22 @@
     "CONFIG_BUILD_OUTPUT_INFO_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      515
+    ]
   ],
   [
     "CONFIG_GPIO_INIT_PRIORITY",
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\gpio\\Kconfig",
-      50
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      516
     ]
   ],
   [
@@ -2446,11 +2666,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SOC_LOG_LEVEL",
@@ -2478,9 +2695,12 @@
     "CONFIG_EXTRA_EXCEPTION_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      527
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT",
@@ -2527,9 +2747,12 @@
     "CONFIG_ARM_ZIMAGE_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      536
+    ]
   ],
   [
     "CONFIG_ISA_THUMB2",
@@ -2557,10 +2780,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core/Kconfig",
-      134
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      539
     ]
   ],
   [
@@ -2568,37 +2791,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core/Kconfig",
-      152
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      540
     ]
   ],
   [
     "CONFIG_RUNTIME_NMI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      541
+    ]
   ],
   [
     "CONFIG_PLATFORM_SPECIFIC_INIT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      542
+    ]
   ],
   [
     "CONFIG_FAULT_DUMP",
     "y",
     "int",
     "2",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core/Kconfig",
-      180
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      543
     ]
   ],
   [
@@ -2606,10 +2835,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core/Kconfig",
-      299
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      544
     ]
   ],
   [
@@ -2617,11 +2846,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core/Kconfig",
-      307
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_FP16_ALT",
@@ -2675,20 +2901,20 @@
     "CONFIG_SW_VECTOR_RELAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      555
+    ]
   ],
   [
     "CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:/Users/iteedi/zephyrproject/zephyr/arch/arm\\core\\cortex_m/Kconfig",
-      418
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ARM",
@@ -2714,9 +2940,12 @@
     "CONFIG_SEMIHOST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      567
+    ]
   ],
   [
     "CONFIG_ARCH_SUPPORTS_ROM_OFFSET",
@@ -2733,9 +2962,12 @@
     "CONFIG_ARM_MPU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      569
+    ]
   ],
   [
     "CONFIG_ARCH_LOG_LEVEL_OFF",
@@ -2782,11 +3014,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_ARCH_LOG_LEVEL",
@@ -2815,10 +3044,10 @@
     "y",
     "int",
     "144",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      221
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      578
     ]
   ],
   [
@@ -2826,19 +3055,22 @@
     "y",
     "hex",
     "0x20000000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      229
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      579
     ]
   ],
   [
     "CONFIG_NOINIT_SNIPPET_FIRST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      580
+    ]
   ],
   [
     "CONFIG_GEN_PRIV_STACKS",
@@ -2854,35 +3086,44 @@
     "CONFIG_STACK_GROWS_UP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      582
+    ]
   ],
   [
     "CONFIG_FRAME_POINTER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      583
+    ]
   ],
   [
     "CONFIG_ISR_TABLES_LOCAL_DECLARATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      588
+    ]
   ],
   [
     "CONFIG_ARCH_DEVICE_STATE_ALIGN",
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      551
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      589
     ]
   ],
   [
@@ -2890,11 +3131,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      559
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_IRQ_VECTOR_TABLE_JUMP_BY_CODE",
@@ -2908,28 +3146,34 @@
     "CONFIG_SRAM_SW_ISR_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      592
+    ]
   ],
   [
     "CONFIG_EXCEPTION_DEBUG",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\arch\\Kconfig",
-      642
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      593
     ]
   ],
   [
     "CONFIG_SIMPLIFIED_EXCEPTION_CODES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      594
+    ]
   ],
   [
     "CONFIG_ARCH_HAS_RAMFUNC_SUPPORT",
@@ -3075,9 +3319,12 @@
     "CONFIG_MPU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      612
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS",
@@ -3145,11 +3392,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_KERNEL_LOG_LEVEL",
@@ -3167,10 +3411,10 @@
     "y",
     "int",
     "16",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      30
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      642
     ]
   ],
   [
@@ -3178,10 +3422,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      73
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      643
     ]
   ],
   [
@@ -3211,54 +3455,63 @@
     "y",
     "int",
     "-127",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      86
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      646
     ]
   ],
   [
     "CONFIG_SCHED_DEADLINE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      647
+    ]
   ],
   [
     "CONFIG_THREAD_STACK_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      648
+    ]
   ],
   [
     "CONFIG_THREAD_CUSTOM_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      649
+    ]
   ],
   [
     "CONFIG_SCHED_DUMB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      650
+    ]
   ],
   [
     "CONFIG_SCHED_SIMPLE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      309
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SCHED_SCALABLE",
@@ -3280,9 +3533,12 @@
     "CONFIG_WAITQ_DUMB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      654
+    ]
   ],
   [
     "CONFIG_WAITQ_SCALABLE",
@@ -3297,11 +3553,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      369
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LIBC_ERRNO",
@@ -3318,10 +3571,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      406
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      662
     ]
   ],
   [
@@ -3329,10 +3582,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      430
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      663
     ]
   ],
   [
@@ -3340,10 +3593,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      459
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      669
     ]
   ],
   [
@@ -3351,10 +3604,10 @@
     "y",
     "string",
     "Booting Zephyr OS build",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      468
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      670
     ]
   ],
   [
@@ -3362,88 +3615,109 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      475
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      671
     ]
   ],
   [
     "CONFIG_BOOT_CLEAR_SCREEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      672
+    ]
   ],
   [
     "CONFIG_THREAD_MONITOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      673
+    ]
   ],
   [
     "CONFIG_THREAD_NAME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      674
+    ]
   ],
   [
     "CONFIG_THREAD_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      675
+    ]
   ],
   [
     "CONFIG_OBJ_CORE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      678
+    ]
   ],
   [
     "CONFIG_WORKQUEUE_WORK_TIMEOUT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      679
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_PRIORITY",
     "y",
     "int",
     "-1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      596
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      684
     ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_NO_YIELD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      685
+    ]
   ],
   [
     "CONFIG_SYSTEM_WORKQUEUE_WORK_TIMEOUT_MS",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      614
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      686
     ]
   ],
   [
@@ -3461,10 +3735,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      664
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      703
     ]
   ],
   [
@@ -3472,62 +3746,77 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      683
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      704
     ]
   ],
   [
     "CONFIG_TIMESLICE_PER_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      705
+    ]
   ],
   [
     "CONFIG_POLL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      711
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_POINTER_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      712
+    ]
   ],
   [
     "CONFIG_MEM_SLAB_TRACE_MAX_UTILIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      713
+    ]
   ],
   [
     "CONFIG_NUM_MBOX_ASYNC_MSGS",
     "y",
     "int",
     "10",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      726
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      714
     ]
   ],
   [
     "CONFIG_EVENTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      715
+    ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_SIZE",
@@ -3536,17 +3825,20 @@
     "8192",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      32
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      716
     ]
   ],
   [
     "CONFIG_HEAP_MEM_POOL_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      717
+    ]
   ],
   [
     "CONFIG_SWAP_NONATOMIC",
@@ -3573,19 +3865,22 @@
     "y",
     "int",
     "365",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig",
-      863
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      722
     ]
   ],
   [
     "CONFIG_TICKET_SPINLOCKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      737
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_SUPPORTS_THREAD_LOCAL_STORAGE",
@@ -3622,43 +3917,55 @@
     "CONFIG_STATIC_INIT_GNU",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      743
+    ]
   ],
   [
     "CONFIG_BOOTARGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      744
+    ]
   ],
   [
     "CONFIG_DEVICE_MUTABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      750
+    ]
   ],
   [
     "CONFIG_DEVICE_DT_METADATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      751
+    ]
   ],
   [
     "CONFIG_DEVICE_DEINIT_SUPPORT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      38
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      752
     ]
   ],
   [
@@ -3666,10 +3973,10 @@
     "y",
     "int",
     "30",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      52
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      758
     ]
   ],
   [
@@ -3677,10 +3984,10 @@
     "y",
     "int",
     "35",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      60
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      759
     ]
   ],
   [
@@ -3688,10 +3995,10 @@
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      68
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      760
     ]
   ],
   [
@@ -3699,10 +4006,10 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      74
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      761
     ]
   ],
   [
@@ -3710,91 +4017,121 @@
     "y",
     "int",
     "90",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\kernel\\Kconfig.device",
-      82
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      762
     ]
   ],
   [
     "CONFIG_SOC_EARLY_RESET_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      778
+    ]
   ],
   [
     "CONFIG_SOC_PREP_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      779
+    ]
   ],
   [
     "CONFIG_SOC_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      780
+    ]
   ],
   [
     "CONFIG_SOC_PER_CORE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      781
+    ]
   ],
   [
     "CONFIG_BOARD_EARLY_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      782
+    ]
   ],
   [
     "CONFIG_BOARD_LATE_INIT_HOOK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      783
+    ]
   ],
   [
     "CONFIG_ADC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      789
+    ]
   ],
   [
     "CONFIG_AUDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      790
+    ]
   ],
   [
     "CONFIG_AUXDISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      791
+    ]
   ],
   [
     "CONFIG_BBRAM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      792
+    ]
   ],
   [
     "CONFIG_CAN",
@@ -3803,8 +4140,8 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      16
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      793
     ]
   ],
   [
@@ -3852,11 +4189,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CAN_LOG_LEVEL",
@@ -3874,10 +4208,10 @@
     "y",
     "int",
     "80",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig",
-      22
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      801
     ]
   ],
   [
@@ -3885,10 +4219,10 @@
     "y",
     "int",
     "125000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig",
-      28
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      802
     ]
   ],
   [
@@ -3896,10 +4230,10 @@
     "y",
     "int",
     "1000000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig",
-      35
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      803
     ]
   ],
   [
@@ -3907,19 +4241,22 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig",
-      43
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      804
     ]
   ],
   [
     "CONFIG_CAN_ACCEPT_RTR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      805
+    ]
   ],
   [
     "CONFIG_CAN_FD_MODE",
@@ -3928,35 +4265,41 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      17
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      806
     ]
   ],
   [
     "CONFIG_CAN_MANUAL_RECOVERY_MODE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      807
+    ]
   ],
   [
     "CONFIG_CAN_RX_TIMESTAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      808
+    ]
   ],
   [
     "CONFIG_CAN_MAX_STD_ID_FILTER",
     "y",
     "int",
     "28",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig.stm32",
-      62
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      809
     ]
   ],
   [
@@ -3964,10 +4307,10 @@
     "y",
     "int",
     "8",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig.stm32",
-      70
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      810
     ]
   ],
   [
@@ -3975,10 +4318,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\Kconfig.stm32",
-      53
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      811
     ]
   ],
   [
@@ -3996,19 +4339,22 @@
     "y",
     "int",
     "45",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\can\\transceiver\\Kconfig",
-      10
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      817
     ]
   ],
   [
     "CONFIG_CHARGER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      820
+    ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_LOG_LEVEL_OFF",
@@ -4055,11 +4401,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CLOCK_CONTROL_LOG_LEVEL",
@@ -4077,37 +4420,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\clock_control\\Kconfig.stm32",
-      11
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      828
     ]
   ],
   [
     "CONFIG_CLOCK_CONTROL_FIXED_RATE_CLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      829
+    ]
   ],
   [
     "CONFIG_COMPARATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      830
+    ]
   ],
   [
     "CONFIG_CONSOLE_INPUT_MAX_LINE_LEN",
     "y",
     "int",
     "128",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\console\\Kconfig",
-      16
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      831
     ]
   ],
   [
@@ -4124,19 +4473,22 @@
     "CONFIG_CONSOLE_HANDLER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      833
+    ]
   ],
   [
     "CONFIG_CONSOLE_INIT_PRIORITY",
     "y",
     "int",
     "60",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\console\\Kconfig",
-      37
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      834
     ]
   ],
   [
@@ -4146,57 +4498,75 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      24
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      835
     ]
   ],
   [
     "CONFIG_UART_CONSOLE_DEBUG_SERVER_HOOKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      836
+    ]
   ],
   [
     "CONFIG_UART_CONSOLE_MCUMGR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      837
+    ]
   ],
   [
     "CONFIG_RAM_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      838
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_SENDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      839
+    ]
   ],
   [
     "CONFIG_IPM_CONSOLE_RECEIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      840
+    ]
   ],
   [
     "CONFIG_UART_MCUMGR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      841
+    ]
   ],
   [
     "CONFIG_UART_CONSOLE_LOG_LEVEL_OFF",
@@ -4243,11 +4613,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_UART_CONSOLE_LOG_LEVEL",
@@ -4264,153 +4631,210 @@
     "CONFIG_EFI_CONSOLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      849
+    ]
   ],
   [
     "CONFIG_COREDUMP_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      850
+    ]
   ],
   [
     "CONFIG_CRC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      851
+    ]
   ],
   [
     "CONFIG_CRYPTO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      852
+    ]
   ],
   [
     "CONFIG_DAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      853
+    ]
   ],
   [
     "CONFIG_DAI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      854
+    ]
   ],
   [
     "CONFIG_DEBUG_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      855
+    ]
   ],
   [
     "CONFIG_DISK_DRIVERS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      856
+    ]
   ],
   [
     "CONFIG_DISPLAY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      857
+    ]
   ],
   [
     "CONFIG_DMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      858
+    ]
   ],
   [
     "CONFIG_DP_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      859
+    ]
   ],
   [
     "CONFIG_EDAC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      860
+    ]
   ],
   [
     "CONFIG_EEPROM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      861
+    ]
   ],
   [
     "CONFIG_ENTROPY_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      862
+    ]
   ],
   [
     "CONFIG_ESPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      863
+    ]
   ],
   [
     "CONFIG_ARM_SCMI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      868
+    ]
   ],
   [
     "CONFIG_FPGA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      871
+    ]
   ],
   [
     "CONFIG_FUEL_GAUGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      872
+    ]
   ],
   [
     "CONFIG_GNSS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      873
+    ]
   ],
   [
     "CONFIG_GPIO_LOG_LEVEL_OFF",
@@ -4457,11 +4881,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_GPIO_LOG_LEVEL",
@@ -4478,44 +4899,56 @@
     "CONFIG_GPIO_GET_DIRECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      881
+    ]
   ],
   [
     "CONFIG_GPIO_GET_CONFIG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      882
+    ]
   ],
   [
     "CONFIG_GPIO_ENABLE_DISABLE_INTERRUPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      883
+    ]
   ],
   [
     "CONFIG_GPIO_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\gpio\\Kconfig.stm32",
-      9
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      884
     ]
   ],
   [
     "CONFIG_HAPTICS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      885
+    ]
   ],
   [
     "CONFIG_HWINFO_LOG_LEVEL_OFF",
@@ -4562,11 +4995,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_HWINFO_LOG_LEVEL",
@@ -4594,53 +5024,65 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\hwinfo\\Kconfig.stm32",
-      6
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      894
     ]
   ],
   [
     "CONFIG_HWSPINLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      895
+    ]
   ],
   [
     "CONFIG_I2C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      896
+    ]
   ],
   [
     "CONFIG_I2S",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      897
+    ]
   ],
   [
     "CONFIG_I3C",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      898
+    ]
   ],
   [
     "CONFIG_INTC_INIT_PRIORITY",
     "y",
     "int",
     "40",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\interrupt_controller\\Kconfig",
-      51
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      903
     ]
   ],
   [
@@ -4688,11 +5130,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_INTC_LOG_LEVEL",
@@ -4710,10 +5149,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
-      11
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      911
     ]
   ],
   [
@@ -4721,123 +5160,165 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\interrupt_controller\\Kconfig.stm32",
-      18
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      912
     ]
   ],
   [
     "CONFIG_IPM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      915
+    ]
   ],
   [
     "CONFIG_LED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      916
+    ]
   ],
   [
     "CONFIG_LED_STRIP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      917
+    ]
   ],
   [
     "CONFIG_LORA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      918
+    ]
   ],
   [
     "CONFIG_MBOX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      919
+    ]
   ],
   [
     "CONFIG_MDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      920
+    ]
   ],
   [
     "CONFIG_MIPI_DBI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      921
+    ]
   ],
   [
     "CONFIG_TIMEAWARE_GPIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      926
+    ]
   ],
   [
     "CONFIG_MM_DRV",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      934
+    ]
   ],
   [
     "CONFIG_MSPI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      935
+    ]
   ],
   [
     "CONFIG_OPAMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      936
+    ]
   ],
   [
     "CONFIG_PCIE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      937
+    ]
   ],
   [
     "CONFIG_PCIE_ENDPOINT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      938
+    ]
   ],
   [
     "CONFIG_PECI",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      939
+    ]
   ],
   [
     "CONFIG_PINCTRL",
@@ -4896,11 +5377,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_PINCTRL_LOG_LEVEL",
@@ -4917,38 +5395,44 @@
     "CONFIG_PINCTRL_DYNAMIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      948
+    ]
   ],
   [
     "CONFIG_PINCTRL_KEEP_SLEEP_STATE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\pinctrl\\Kconfig",
-      39
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      949
     ]
   ],
   [
     "CONFIG_PINCTRL_NPCX_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      950
+    ]
   ],
   [
     "CONFIG_PINCTRL_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
-      6
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      951
     ]
   ],
   [
@@ -4956,61 +5440,76 @@
     "y",
     "int",
     "2",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\pinctrl\\Kconfig.stm32",
-      13
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      952
     ]
   ],
   [
     "CONFIG_PM_CPU_OPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      953
+    ]
   ],
   [
     "CONFIG_PS2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      954
+    ]
   ],
   [
     "CONFIG_PSI5",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      955
+    ]
   ],
   [
     "CONFIG_PTP_CLOCK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      956
+    ]
   ],
   [
     "CONFIG_PWM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      957
+    ]
   ],
   [
     "CONFIG_RESET_INIT_PRIORITY",
     "y",
     "int",
     "35",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\reset\\Kconfig",
-      21
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      958
     ]
   ],
   [
@@ -5018,51 +5517,66 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\reset\\Kconfig.stm32",
-      6
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      963
     ]
   ],
   [
     "CONFIG_RETAINED_MEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      964
+    ]
   ],
   [
     "CONFIG_RTC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      965
+    ]
   ],
   [
     "CONFIG_SDHC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      966
+    ]
   ],
   [
     "CONFIG_SENSOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      967
+    ]
   ],
   [
     "CONFIG_SENT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      968
+    ]
   ],
   [
     "CONFIG_SERIAL_HAS_DRIVER",
@@ -5089,10 +5603,10 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\serial\\Kconfig",
-      36
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      975
     ]
   ],
   [
@@ -5140,11 +5654,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_UART_LOG_LEVEL",
@@ -5164,84 +5675,108 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      13
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      983
     ]
   ],
   [
     "CONFIG_UART_DRV_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      984
+    ]
   ],
   [
     "CONFIG_UART_WIDE_DATA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      985
+    ]
   ],
   [
     "CONFIG_UART_PIPE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      986
+    ]
   ],
   [
     "CONFIG_UART_ASYNC_RX_HELPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      987
+    ]
   ],
   [
     "CONFIG_UART_NATIVE_POSIX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      992
+    ]
   ],
   [
     "CONFIG_UART_NPCX_FIFO_EX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      993
+    ]
   ],
   [
     "CONFIG_UART_STM32",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\serial\\Kconfig.stm32",
-      8
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      994
     ]
   ],
   [
     "CONFIG_SMBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      995
+    ]
   ],
   [
     "CONFIG_STEPPER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      996
+    ]
   ],
   [
     "CONFIG_TIMER_HAS_64BIT_CYCLE_COUNTER",
@@ -5257,27 +5792,33 @@
     "CONFIG_TIMER_READS_ITS_FREQUENCY_AT_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1002
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_SLOPPY_IDLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1003
+    ]
   ],
   [
     "CONFIG_SYSTEM_CLOCK_INIT_PRIORITY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\timer\\Kconfig",
-      35
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1004
     ]
   ],
   [
@@ -5315,10 +5856,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\timer\\Kconfig.cortex_m_systick",
-      33
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1008
     ]
   ],
   [
@@ -5326,40 +5867,52 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     null
   ],
   [
     "CONFIG_USB_BC12",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1012
+    ]
   ],
   [
     "CONFIG_UDC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1013
+    ]
   ],
   [
     "CONFIG_UHC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1014
+    ]
   ],
   [
     "CONFIG_UVB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1015
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_DRIVER",
@@ -5375,18 +5928,22 @@
     "CONFIG_USB_DC_HAS_HS_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1017
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_REMOTE_WAKEUP",
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "USB_DC_STM32 && (DT_HAS_ST_STM32_OTGFS_ENABLED || DT_HAS_ST_STM32_OTGHS_ENABLED || DT_HAS_ST_STM32_USB_ENABLED) && USB_DEVICE_DRIVER"
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1018
     ]
   ],
   [
@@ -5394,10 +5951,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\usb\\device\\Kconfig",
-      50
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1019
     ]
   ],
   [
@@ -5405,10 +5962,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\drivers\\usb\\device\\Kconfig",
-      66
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1020
     ]
   ],
   [
@@ -5456,11 +6013,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_USB_DRIVER_LOG_LEVEL",
@@ -5477,89 +6031,122 @@
     "CONFIG_USBC_TCPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1034
+    ]
   ],
   [
     "CONFIG_USBC_VBUS_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1035
+    ]
   ],
   [
     "CONFIG_USBC_PPC_DRIVER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1036
+    ]
   ],
   [
     "CONFIG_VIDEO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1037
+    ]
   ],
   [
     "CONFIG_VIRTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1038
+    ]
   ],
   [
     "CONFIG_VIRTUALIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1039
+    ]
   ],
   [
     "CONFIG_W1",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1040
+    ]
   ],
   [
     "CONFIG_TEE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1041
+    ]
   ],
   [
     "CONFIG_REQUIRES_FULL_LIBC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1044
+    ]
   ],
   [
     "CONFIG_REQUIRES_FLOAT_PRINTF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1045
+    ]
   ],
   [
     "CONFIG_LIBC_ALLOW_LESS_THAN_64BIT_TIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1046
+    ]
   ],
   [
     "CONFIG_FULL_LIBC_SUPPORTED",
@@ -5618,11 +6205,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\Kconfig",
-      81
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_NEWLIB_LIBC",
@@ -5664,17 +6248,23 @@
     "CONFIG_COMMON_LIBC_ASCTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1061
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_CTIME_R",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1062
+    ]
   ],
   [
     "CONFIG_COMMON_LIBC_TIME",
@@ -5691,9 +6281,10 @@
     "y",
     "bool",
     "y",
-    "imply",
+    "assign",
     [
-      "PICOLIBC && PICOLIBC_SUPPORTED && <choice LIBC_IMPLEMENTATION>"
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1064
     ]
   ],
   [
@@ -5701,10 +6292,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\common\\Kconfig",
-      88
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1065
     ]
   ],
   [
@@ -5712,19 +6303,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\common\\Kconfig",
-      97
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1066
     ]
   ],
   [
     "CONFIG_COMMON_LIBC_REMOVE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1067
+    ]
   ],
   [
     "CONFIG_PICOLIBC_USE_MODULE",
@@ -5739,11 +6333,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\picolibc\\Kconfig",
-      8
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_PICOLIBC_IO_FLOAT",
@@ -5758,21 +6349,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\picolibc\\Kconfig",
-      34
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STDOUT_CONSOLE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\libc\\Kconfig",
-      173
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1072
     ]
   ],
   [
@@ -5790,90 +6378,108 @@
     "CONFIG_CPP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1079
+    ]
   ],
   [
     "CONFIG_SYS_HASH_FUNC32",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1089
+    ]
   ],
   [
     "CONFIG_SYS_HASH_MAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1095
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_STRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1101
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1102
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ALLOC_LOOPS",
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\heap\\Kconfig",
-      36
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1103
     ]
   ],
   [
     "CONFIG_SYS_HEAP_RUNTIME_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1104
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_ARRAY_SIZE",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\heap\\Kconfig",
-      57
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1105
     ]
   ],
   [
     "CONFIG_SYS_HEAP_LISTENER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1106
+    ]
   ],
   [
     "CONFIG_SYS_HEAP_SMALL_ONLY",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\heap\\Kconfig",
-      84
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SYS_HEAP_BIG_ONLY",
@@ -5895,76 +6501,100 @@
     "CONFIG_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1110
+    ]
   ],
   [
     "CONFIG_SHARED_MULTI_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1111
+    ]
   ],
   [
     "CONFIG_SYS_MEM_BLOCKS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1117
+    ]
   ],
   [
     "CONFIG_MIDI2_UMP_STREAM_RESPONDER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1123
+    ]
   ],
   [
     "CONFIG_NET_BUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1126
+    ]
   ],
   [
     "CONFIG_FDTABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1131
+    ]
   ],
   [
     "CONFIG_ZVFS_OPEN_MAX",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\os\\Kconfig",
-      15
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1132
     ]
   ],
   [
     "CONFIG_ZVFS_OPEN_IGNORE_MIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1133
+    ]
   ],
   [
     "CONFIG_PRINTK_SYNC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1134
+    ]
   ],
   [
     "CONFIG_MPSC_PBUF",
@@ -5980,17 +6610,23 @@
     "CONFIG_SPSC_PBUF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1136
+    ]
   ],
   [
     "CONFIG_MPSC_CLEAR_ALLOCATED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1137
+    ]
   ],
   [
     "CONFIG_HAS_POWEROFF",
@@ -6006,20 +6642,20 @@
     "CONFIG_POWEROFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1139
+    ]
   ],
   [
     "CONFIG_CBPRINTF_COMPLETE",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\os\\Kconfig.cbprintf",
-      6
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_NANO",
@@ -6034,11 +6670,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\os\\Kconfig.cbprintf",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_REDUCED_INTEGRAL",
@@ -6052,25 +6685,34 @@
     "CONFIG_CBPRINTF_FP_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1144
+    ]
   ],
   [
     "CONFIG_CBPRINTF_FP_A_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1145
+    ]
   ],
   [
     "CONFIG_CBPRINTF_LIBC_SUBSTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1146
+    ]
   ],
   [
     "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL_OFF",
@@ -6117,11 +6759,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CBPRINTF_PACKAGE_LOG_LEVEL",
@@ -6138,9 +6777,12 @@
     "CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1154
+    ]
   ],
   [
     "CONFIG_CBPRINTF_CONVERT_CHECK_PTR",
@@ -6157,17 +6799,23 @@
     "CONFIG_ZVFS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1156
+    ]
   ],
   [
     "CONFIG_CPU_LOAD_METRIC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1157
+    ]
   ],
   [
     "CONFIG_CPU_LOAD_LOG_LEVEL_OFF",
@@ -6214,11 +6862,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CPU_LOAD_LOG_LEVEL",
@@ -6235,17 +6880,23 @@
     "CONFIG_POSIX_SYSTEM_INTERFACES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1170
+    ]
   ],
   [
     "CONFIG_POSIX_API",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1171
+    ]
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_NONE",
@@ -6260,11 +6911,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\posix\\Kconfig.profile",
-      29
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_POSIX_AEP_CHOICE_BASE",
@@ -6332,44 +6980,53 @@
     "CONFIG_GETOPT_LONG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1185
+    ]
   ],
   [
     "CONFIG_EVENTFD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1189
+    ]
   ],
   [
     "CONFIG_SMF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1190
+    ]
   ],
   [
     "CONFIG_LIBGCC_RTLIB",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\lib\\runtime\\Kconfig",
-      13
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_JSON_LIBRARY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1196
+    ]
   ],
   [
     "CONFIG_RING_BUFFER",
@@ -6385,169 +7042,232 @@
     "CONFIG_RING_BUFFER_LARGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1198
+    ]
   ],
   [
     "CONFIG_NOTIFY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1199
+    ]
   ],
   [
     "CONFIG_BASE64",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1200
+    ]
   ],
   [
     "CONFIG_ONOFF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1201
+    ]
   ],
   [
     "CONFIG_UTF8",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1202
+    ]
   ],
   [
     "CONFIG_COBS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1203
+    ]
   ],
   [
     "CONFIG_UUID",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1209
+    ]
   ],
   [
     "CONFIG_MIN_HEAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1212
+    ]
   ],
   [
     "CONFIG_BINDESC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1218
+    ]
   ],
   [
     "CONFIG_BT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1219
+    ]
   ],
   [
     "CONFIG_CANOPEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1224
+    ]
   ],
   [
     "CONFIG_ISOTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1225
+    ]
   ],
   [
     "CONFIG_CONSOLE_SUBSYS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1228
+    ]
   ],
   [
     "CONFIG_CPU_FREQ",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1229
+    ]
   ],
   [
     "CONFIG_CRC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1230
+    ]
   ],
   [
     "CONFIG_DAP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1231
+    ]
   ],
   [
     "CONFIG_THREAD_ANALYZER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1236
+    ]
   ],
   [
     "CONFIG_DEBUG",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1242
+    ]
   ],
   [
     "CONFIG_UBSAN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1243
+    ]
   ],
   [
     "CONFIG_STACK_USAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1244
+    ]
   ],
   [
     "CONFIG_STACK_SENTINEL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1245
+    ]
   ],
   [
     "CONFIG_PRINTK",
@@ -6573,249 +7293,330 @@
     "CONFIG_FORCE_NO_ASSERT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1248
+    ]
   ],
   [
     "CONFIG_ASSERT_VERBOSE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\debug\\Kconfig",
-      230
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1249
     ]
   ],
   [
     "CONFIG_ASSERT_NO_FILE_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1250
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_COND_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1251
+    ]
   ],
   [
     "CONFIG_ASSERT_NO_MSG_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1252
+    ]
   ],
   [
     "CONFIG_ASSERT_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1253
+    ]
   ],
   [
     "CONFIG_OVERRIDE_FRAME_POINTER_DEFAULT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1254
+    ]
   ],
   [
     "CONFIG_DEBUG_THREAD_INFO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1255
+    ]
   ],
   [
     "CONFIG_DEBUG_COREDUMP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1256
+    ]
   ],
   [
     "CONFIG_SYMTAB",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1257
+    ]
   ],
   [
     "CONFIG_MIPI_STP_DECODER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1260
+    ]
   ],
   [
     "CONFIG_CS_TRACE_DEFMT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1261
+    ]
   ],
   [
     "CONFIG_CPU_LOAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1262
+    ]
   ],
   [
     "CONFIG_CPU_LOAD_LOG_PERIODICALLY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\debug\\Kconfig",
-      374
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1263
     ]
   ],
   [
     "CONFIG_DISK_ACCESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1264
+    ]
   ],
   [
     "CONFIG_DSP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1265
+    ]
   ],
   [
     "CONFIG_EMUL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1266
+    ]
   ],
   [
     "CONFIG_CHARACTER_FRAMEBUFFER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1267
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM_LIB_LINK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1272
+    ]
   ],
   [
     "CONFIG_FILE_SYSTEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1273
+    ]
   ],
   [
     "CONFIG_ZMS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1274
+    ]
   ],
   [
     "CONFIG_GNSS_RTK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1277
+    ]
   ],
   [
     "CONFIG_INSTRUMENTATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1278
+    ]
   ],
   [
     "CONFIG_RPMSG_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1283
+    ]
   ],
   [
     "CONFIG_IPC_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1284
+    ]
   ],
   [
     "CONFIG_OPENAMP_RSC_TABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1285
+    ]
   ],
   [
     "CONFIG_JWT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1288
+    ]
   ],
   [
     "CONFIG_LLEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1289
+    ]
   ],
   [
     "CONFIG_LLEXT_EDK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1290
+    ]
   ],
   [
     "CONFIG_LOG_CORE_INIT_PRIORITY",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig",
-      18
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1295
     ]
   ],
   [
@@ -6823,11 +7624,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.mode",
-      9
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_MODE_IMMEDIATE",
@@ -6849,52 +7647,67 @@
     "CONFIG_LOG_FRONTEND",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1299
+    ]
   ],
   [
     "CONFIG_LOG_FRONTEND_OPT_API",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1300
+    ]
   ],
   [
     "CONFIG_LOG_CUSTOM_HEADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1301
+    ]
   ],
   [
     "CONFIG_LOG_MULTIDOMAIN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1302
+    ]
   ],
   [
     "CONFIG_LOG_FLUSH_SLEEP_US",
     "y",
     "int",
     "10000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.mode",
-      83
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1303
     ]
   ],
   [
     "CONFIG_LOG_RUNTIME_FILTERING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1308
+    ]
   ],
   [
     "CONFIG_LOG_DEFAULT_LEVEL",
@@ -6903,8 +7716,8 @@
     "3",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      28
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1309
     ]
   ],
   [
@@ -6912,10 +7725,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.filtering",
-      30
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1310
     ]
   ],
   [
@@ -6923,10 +7736,10 @@
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.filtering",
-      47
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1311
     ]
   ],
   [
@@ -6934,10 +7747,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      10
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1317
     ]
   ],
   [
@@ -6945,29 +7758,32 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      19
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1318
     ]
   ],
   [
     "CONFIG_LOG_BLOCK_IN_THREAD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1319
+    ]
   ],
   [
     "CONFIG_LOG_PROCESS_TRIGGER_THRESHOLD",
     "y",
     "int",
     "10",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      44
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1320
     ]
   ],
   [
@@ -6975,10 +7791,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      55
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1321
     ]
   ],
   [
@@ -6986,10 +7802,10 @@
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      66
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1322
     ]
   ],
   [
@@ -6997,29 +7813,32 @@
     "y",
     "int",
     "1000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      73
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1323
     ]
   ],
   [
     "CONFIG_LOG_PROCESS_THREAD_CUSTOM_PRIORITY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1324
+    ]
   ],
   [
     "CONFIG_LOG_BUFFER_SIZE",
     "y",
     "int",
     "1024",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      123
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1325
     ]
   ],
   [
@@ -7027,104 +7846,131 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.processing",
-      152
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1326
     ]
   ],
   [
     "CONFIG_LOG_TIMESTAMP_64BIT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1327
+    ]
   ],
   [
     "CONFIG_LOG_TIMESTAMP_USE_REALTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1328
+    ]
   ],
   [
     "CONFIG_LOG_SPEED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1329
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_ERR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1339
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_WRN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1340
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_INF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1341
+    ]
   ],
   [
     "CONFIG_LOG_FUNC_NAME_PREFIX_DBG",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      20
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1342
     ]
   ],
   [
     "CONFIG_LOG_MIPI_SYST_ENABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1345
+    ]
   ],
   [
     "CONFIG_LOG_THREAD_ID_PREFIX",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1346
+    ]
   ],
   [
     "CONFIG_LOG_CUSTOM_FORMAT_SUPPORT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1347
+    ]
   ],
   [
     "CONFIG_LOG_BACKEND_SHOW_TIMESTAMP",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      137
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1348
     ]
   ],
   [
@@ -7132,10 +7978,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      143
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1349
     ]
   ],
   [
@@ -7143,37 +7989,43 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      150
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1350
     ]
   ],
   [
     "CONFIG_LOG_INFO_COLOR_GREEN",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1351
+    ]
   ],
   [
     "CONFIG_LOG_DBG_COLOR_BLUE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1352
+    ]
   ],
   [
     "CONFIG_LOG_TAG_MAX_LEN",
     "y",
     "int",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      166
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1353
     ]
   ],
   [
@@ -7191,10 +8043,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      187
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1355
     ]
   ],
   [
@@ -7202,11 +8054,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.formatting",
-      194
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_OUTPUT_FORMAT_DATE_TIMESTAMP",
@@ -7245,10 +8094,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\backends\\Kconfig.uart",
-      7
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1366
     ]
   ],
   [
@@ -7256,10 +8105,10 @@
     "y",
     "int",
     "1",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\backends\\Kconfig.uart",
-      22
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1367
     ]
   ],
   [
@@ -7267,10 +8116,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\backends\\Kconfig.uart",
-      33
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1368
     ]
   ],
   [
@@ -7278,11 +8127,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_format_config",
-      6
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LOG_BACKEND_UART_OUTPUT_DICTIONARY",
@@ -7315,19 +8161,22 @@
     "CONFIG_LOG_BACKEND_IPC_SERVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1373
+    ]
   ],
   [
     "CONFIG_LOG_USE_VLA",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.misc",
-      21
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1379
     ]
   ],
   [
@@ -7335,53 +8184,65 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.misc",
-      31
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1380
     ]
   ],
   [
     "CONFIG_LOG_ALWAYS_RUNTIME",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1381
+    ]
   ],
   [
     "CONFIG_LOG_FMT_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1382
+    ]
   ],
   [
     "CONFIG_LOG_FMT_STRING_VALIDATE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1383
+    ]
   ],
   [
     "CONFIG_LOG_MEM_UTILIZATION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1384
+    ]
   ],
   [
     "CONFIG_LOG_FAILURE_REPORT_PERIOD",
     "y",
     "int",
     "1000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.misc",
-      115
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1385
     ]
   ],
   [
@@ -7389,10 +8250,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig",
-      54
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1388
     ]
   ],
   [
@@ -7400,10 +8261,10 @@
     "y",
     "int",
     "5000",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig",
-      65
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1389
     ]
   ],
   [
@@ -7420,57 +8281,78 @@
     "CONFIG_MEM_ATTR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1393
+    ]
   ],
   [
     "CONFIG_EC_HOST_CMD",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1402
+    ]
   ],
   [
     "CONFIG_OSDP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1405
+    ]
   ],
   [
     "CONFIG_MODBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1408
+    ]
   ],
   [
     "CONFIG_MODEM_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1409
+    ]
   ],
   [
     "CONFIG_NETWORKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1414
+    ]
   ],
   [
     "CONFIG_NVMEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1417
+    ]
   ],
   [
     "CONFIG_HAS_PM",
@@ -7486,199 +8368,265 @@
     "CONFIG_PM_POLICY_LATENCY_STANDALONE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1423
+    ]
   ],
   [
     "CONFIG_MCTP",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1429
+    ]
   ],
   [
     "CONFIG_PROFILING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1437
+    ]
   ],
   [
     "CONFIG_TEST_RANDOM_GENERATOR",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1442
+    ]
   ],
   [
     "CONFIG_TIMER_RANDOM_INITIAL_STATE",
     "y",
     "int",
     "123456789",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\random\\Kconfig",
-      33
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1443
     ]
   ],
   [
     "CONFIG_RTIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1446
+    ]
   ],
   [
     "CONFIG_MMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1451
+    ]
   ],
   [
     "CONFIG_SDMMC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1452
+    ]
   ],
   [
     "CONFIG_SDIO_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1453
+    ]
   ],
   [
     "CONFIG_SECURE_STORAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1456
+    ]
   ],
   [
     "CONFIG_SETTINGS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1457
+    ]
   ],
   [
     "CONFIG_SHELL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1458
+    ]
   ],
   [
     "CONFIG_STATS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1459
+    ]
   ],
   [
     "CONFIG_STREAM_FLASH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1464
+    ]
   ],
   [
     "CONFIG_TASK_WDT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1467
+    ]
   ],
   [
     "CONFIG_ZTEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1472
+    ]
   ],
   [
     "CONFIG_ZTEST_MOCKING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1473
+    ]
   ],
   [
     "CONFIG_ZTRESS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1474
+    ]
   ],
   [
     "CONFIG_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1475
+    ]
   ],
   [
     "CONFIG_TEST_USERSPACE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1476
+    ]
   ],
   [
     "CONFIG_FORCE_COVERAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1482
+    ]
   ],
   [
     "CONFIG_COVERAGE_DUMP_PATH_EXCLUDE",
     "y",
     "string",
     "",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\testsuite\\Kconfig.coverage",
-      96
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1483
     ]
   ],
   [
     "CONFIG_TIMING_FUNCTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1486
+    ]
   ],
   [
     "CONFIG_TRACING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1487
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK",
@@ -7687,8 +8635,8 @@
     "y",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      2
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1488
     ]
   ],
   [
@@ -7736,11 +8684,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\logging\\Kconfig.template.log_config",
-      5
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_USB_DEVICE_LOG_LEVEL",
@@ -7760,8 +8705,8 @@
     "0x1d50",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      4
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1496
     ]
   ],
   [
@@ -7771,8 +8716,8 @@
     "0x606f",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      5
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1497
     ]
   ],
   [
@@ -7782,8 +8727,8 @@
     "EWS",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      6
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1498
     ]
   ],
   [
@@ -7793,8 +8738,8 @@
     "EWS gs_usb CAN-FD",
     "assign",
     [
-      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/prj.conf",
-      3
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1499
     ]
   ],
   [
@@ -7802,37 +8747,43 @@
     "y",
     "string",
     "0123456789ABCDEF",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      46
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1500
     ]
   ],
   [
     "CONFIG_USB_CONFIGURATION_STRING_DESC_ENABLE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1501
+    ]
   ],
   [
     "CONFIG_USB_COMPOSITE_DEVICE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1502
+    ]
   ],
   [
     "CONFIG_USB_MAX_NUM_TRANSFERS",
     "y",
     "int",
     "4",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      79
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1503
     ]
   ],
   [
@@ -7840,10 +8791,10 @@
     "y",
     "int",
     "128",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      99
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1504
     ]
   ],
   [
@@ -7851,10 +8802,10 @@
     "y",
     "int",
     "8",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      104
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1505
     ]
   ],
   [
@@ -7862,45 +8813,54 @@
     "y",
     "int",
     "3",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      111
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1506
     ]
   ],
   [
     "CONFIG_USB_DEVICE_SOF",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1507
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_BOS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1508
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_OS_DESC",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1509
+    ]
   ],
   [
     "CONFIG_USB_SELF_POWERED",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      127
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1510
     ]
   ],
   [
@@ -7908,115 +8868,154 @@
     "y",
     "int",
     "50",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\subsys\\usb\\device\\Kconfig",
-      134
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1511
     ]
   ],
   [
     "CONFIG_USB_WORKQUEUE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1512
+    ]
   ],
   [
     "CONFIG_USB_MASS_STORAGE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1519
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_BLUETOOTH",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1520
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_NETWORK_ECM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1525
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_NETWORK_EEM",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1526
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_NETWORK_RNDIS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1527
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_HID",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1530
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_AUDIO",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1531
+    ]
   ],
   [
     "CONFIG_USB_DEVICE_STACK_NEXT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1532
+    ]
   ],
   [
     "CONFIG_USB_HOST_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1533
+    ]
   ],
   [
     "CONFIG_USBC_STACK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1534
+    ]
   ],
   [
     "CONFIG_ZBUS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1535
+    ]
   ],
   [
     "CONFIG_MODULES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1536
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_ZEPHYR_0_17",
@@ -8064,11 +9063,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      62
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_LINKER_ORPHAN_SECTION_ERROR",
@@ -8083,10 +9079,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      119
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1553
     ]
   ],
   [
@@ -8094,10 +9090,10 @@
     "y",
     "hex",
     "0",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      147
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1554
     ]
   ],
   [
@@ -8116,11 +9112,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      162
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_CMAKE_LINKER_GENERATOR",
@@ -8134,36 +9127,45 @@
     "CONFIG_HAVE_CUSTOM_LINKER_SCRIPT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1558
+    ]
   ],
   [
     "CONFIG_LINKER_SORT_BY_ALIGNMENT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      212
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1559
     ]
   ],
   [
     "CONFIG_LINKER_USE_BOOT_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1564
+    ]
   ],
   [
     "CONFIG_LINKER_USE_PINNED_SECTION",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1565
+    ]
   ],
   [
     "CONFIG_LINKER_GENERIC_SECTIONS_PRESENT_AT_BOOT",
@@ -8181,10 +9183,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      286
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1567
     ]
   ],
   [
@@ -8192,10 +9194,10 @@
     "y",
     "hex",
     "0xE015E015",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      302
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1568
     ]
   ],
   [
@@ -8224,9 +9226,12 @@
     "CONFIG_LINKER_DEVNULL_MEMORY",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1573
+    ]
   ],
   [
     "CONFIG_STD_C90",
@@ -8241,11 +9246,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      386
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_STD_C11",
@@ -8285,36 +9287,42 @@
     "CONFIG_GNU_C_EXTENSIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1585
+    ]
   ],
   [
     "CONFIG_CODING_GUIDELINE_CHECK",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1586
+    ]
   ],
   [
     "CONFIG_COMPILER_FREESTANDING",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1587
+    ]
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS",
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      484
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_SIZE_OPTIMIZATIONS_AGGRESSIVE",
@@ -8352,35 +9360,44 @@
     "CONFIG_COMPILER_WARNINGS_AS_ERRORS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1593
+    ]
   ],
   [
     "CONFIG_DEPRECATION_TEST",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1594
+    ]
   ],
   [
     "CONFIG_COMPILER_SAVE_TEMPS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1595
+    ]
   ],
   [
     "CONFIG_COMPILER_TRACK_MACRO_EXPANSION",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      553
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1596
     ]
   ],
   [
@@ -8388,10 +9405,10 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      561
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1597
     ]
   ],
   [
@@ -8407,11 +9424,8 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      568
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_FORTIFY_SOURCE_RUN_TIME",
@@ -8425,17 +9439,23 @@
     "CONFIG_COMPILER_OPT",
     "y",
     "string",
-    null,
-    "unset",
-    null
+    "",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1601
+    ]
   ],
   [
     "CONFIG_MISRA_SANE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1602
+    ]
   ],
   [
     "CONFIG_TOOLCHAIN_SUPPORTS_VLA_IN_STATEMENTS",
@@ -8469,21 +9489,18 @@
     "y",
     "bool",
     "y",
-    "default",
-    [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      626
-    ]
+    "assign",
+    null
   ],
   [
     "CONFIG_KERNEL_BIN_NAME",
     "y",
     "string",
     "zephyr",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      650
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1613
     ]
   ],
   [
@@ -8491,155 +9508,197 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      656
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1614
     ]
   ],
   [
     "CONFIG_OUTPUT_SYMBOLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1615
+    ]
   ],
   [
     "CONFIG_OUTPUT_PRINT_MEMORY_USAGE",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      698
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1616
     ]
   ],
   [
     "CONFIG_CLEANUP_INTERMEDIATE_FILES",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1617
+    ]
   ],
   [
     "CONFIG_BUILD_GAP_FILL_PATTERN",
     "y",
     "hex",
     "0xFF",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      719
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1618
     ]
   ],
   [
     "CONFIG_BUILD_NO_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1619
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_HEX_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1620
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_EXE",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1621
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_S19_GAP_FILL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1622
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_UF2",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1623
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_MOT",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1624
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIPPED",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1625
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_COMPRESS_DEBUG_SECTIONS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1626
+    ]
   ],
   [
     "CONFIG_BUILD_ALIGN_LMA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1627
+    ]
   ],
   [
     "CONFIG_APPLICATION_DEFINED_SYSCALL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1628
+    ]
   ],
   [
     "CONFIG_MAKEFILE_EXPORTS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1629
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_META",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1630
+    ]
   ],
   [
     "CONFIG_BUILD_OUTPUT_STRIP_PATHS",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      964
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1631
     ]
   ],
   [
@@ -8647,19 +9706,22 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      978
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1632
     ]
   ],
   [
     "CONFIG_EMIT_ALL_SYSCALLS",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1633
+    ]
   ],
   [
     "CONFIG_DEPRECATED",
@@ -8677,56 +9739,65 @@
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      1010
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1637
     ]
   ],
   [
     "CONFIG_WARN_EXPERIMENTAL",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1638
+    ]
   ],
   [
     "CONFIG_ENFORCE_ZEPHYR_STDINT",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      1045
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1639
     ]
   ],
   [
     "CONFIG_IS_BOOTLOADER",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1645
+    ]
   ],
   [
     "CONFIG_BOOTLOADER_BOSSA",
     "y",
     "bool",
-    null,
-    "unset",
-    null
+    "n",
+    "assign",
+    [
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1646
+    ]
   ],
   [
     "CONFIG_LEGACY_GENERATED_INCLUDE_PATH",
     "y",
     "bool",
     "y",
-    "default",
+    "assign",
     [
-      "C:\\Users\\iteedi\\zephyrproject\\zephyr\\Kconfig.zephyr",
-      1117
+      "C:/Users/iteedi/zephyrproject/projects/EWS/firmware/canfd_cdc_composite/build/zephyr/.config",
+      1652
     ]
   ]
 ]

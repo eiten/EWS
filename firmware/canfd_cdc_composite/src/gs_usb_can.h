@@ -18,6 +18,10 @@
 #define GS_USB_BREQ_DEVICE_CONFIG  5
 #define GS_USB_BREQ_TIMESTAMP      6
 #define GS_USB_BREQ_IDENTIFY       7
+
+/* Device modes */
+#define GS_CAN_MODE_STOP           0
+#define GS_CAN_MODE_START          1
 #define GS_USB_BREQ_GET_USER_ID    8
 #define GS_USB_BREQ_SET_USER_ID    9
 #define GS_USB_BREQ_DATA_BITTIMING 10
@@ -55,6 +59,20 @@
 #define GS_CAN_FEATURE_TERMINATION       (1 << 11)
 #define GS_CAN_FEATURE_BERR_REPORTING    (1 << 12)
 #define GS_CAN_FEATURE_GET_STATE         (1 << 13)
+
+/* gs_usb frame flags */
+#define GS_CAN_FLAG_OVERFLOW            0x01
+#define GS_CAN_FLAG_FD                  0x02
+#define GS_CAN_FLAG_BRS                 0x04
+#define GS_CAN_FLAG_ESI                 0x08
+#define GS_CAN_FLAG_ERROR               0x10
+
+/* CAN ID flags (compatible with Linux SocketCAN) */
+#define CAN_EFF_FLAG                    0x80000000U  /* EFF/SFF is set in the MSB */
+#define CAN_RTR_FLAG                    0x40000000U  /* Remote transmission request */
+#define CAN_ERR_FLAG                    0x20000000U  /* Error frame */
+#define CAN_SFF_MASK                    0x000007FFU  /* Standard frame format (SFF) */
+#define CAN_EFF_MASK                    0x1FFFFFFFU  /* Extended frame format (EFF) */
 
 struct gs_host_config {
     uint32_t byte_order;
@@ -140,5 +158,17 @@ int gs_usb_can_send_frame(const struct can_frame *frame);
  * @return 0 on success, negative error code on failure
  */
 int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame);
+
+/**
+ * Start CAN interface
+ * @return 0 on success, negative error code on failure
+ */
+int gs_usb_can_start(void);
+
+/**
+ * Stop CAN interface
+ * @return 0 on success, negative error code on failure  
+ */
+int gs_usb_can_stop(void);
 
 #endif /* GS_USB_CAN_H */

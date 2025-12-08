@@ -70,28 +70,34 @@ static void can_rx_callback(const struct device *dev, struct can_frame *frame, v
     gs_frame.can_id = frame->id;
     
     if (frame->flags & CAN_FRAME_IDE) {
-        gs_frame.can_id |= 0x80000000;  /* Extended ID flag */
+        gs_frame.can_id |= CAN_EFF_FLAG;  /* Extended ID flag */
     }
     if (frame->flags & CAN_FRAME_RTR) {
-        gs_frame.can_id |= 0x40000000;  /* RTR flag */
+        gs_frame.can_id |= CAN_RTR_FLAG;  /* RTR flag */
     }
+    
+    /* Handle CAN-FD specific flags */
     if (frame->flags & CAN_FRAME_FDF) {
-        gs_frame.flags |= 0x01;  /* FD frame */
+        gs_frame.flags |= GS_CAN_FLAG_FD;  /* FD frame */
     }
     if (frame->flags & CAN_FRAME_BRS) {
-        gs_frame.flags |= 0x02;  /* BRS frame */
+        gs_frame.flags |= GS_CAN_FLAG_BRS;  /* BRS frame */
+    }
+    if (frame->flags & CAN_FRAME_ESI) {
+        gs_frame.flags |= GS_CAN_FLAG_ESI;  /* ESI frame */
     }
     
     gs_frame.can_dlc = frame->dlc;
     gs_frame.channel = 0;
-    gs_frame.timestamp_us = k_uptime_get_32();
+    gs_frame.timestamp_us = k_uptime_get_32() * 1000;  /* Convert to microseconds */
     
     memcpy(gs_frame.data, frame->data, MIN(frame->dlc, 8));
     
     /* Send frame to host via USB bulk IN endpoint */
     gs_usb_send_frame_to_host((const uint8_t*)&gs_frame, sizeof(gs_frame));
     
-    LOG_DBG("RX: ID=0x%08x DLC=%d", frame->id, frame->dlc);
+    LOG_DBG("RX: ID=0x%08x DLC=%d FD=%d", frame->id, frame->dlc, 
+            (frame->flags & CAN_FRAME_FDF) ? 1 : 0);
 }
 
 int gs_usb_can_init(void)
@@ -265,23 +271,28 @@ int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame)
     int ret;
 
     /* Convert gs_usb frame to CAN frame */
-    frame.id = gs_frame->can_id & 0x1FFFFFFF;
+    frame.id = gs_frame->can_id & CAN_EFF_MASK;
     
-    if (gs_frame->can_id & 0x80000000) {
-        frame.flags |= CAN_FRAME_IDE;
+    if (gs_frame->can_id & CAN_EFF_FLAG) {
+        frame.flags |= CAN_FRAME_IDE;  /* Extended ID */
     }
-    if (gs_frame->can_id & 0x40000000) {
-        frame.flags |= CAN_FRAME_RTR;
+    if (gs_frame->can_id & CAN_RTR_FLAG) {
+        frame.flags |= CAN_FRAME_RTR;  /* RTR frame */
     }
-    if (gs_frame->flags & 0x01) {
-        frame.flags |= CAN_FRAME_FDF;
+    
+    /* Handle CAN-FD flags */
+    if (gs_frame->flags & GS_CAN_FLAG_FD) {
+        frame.flags |= CAN_FRAME_FDF;  /* FD frame */
     }
-    if (gs_frame->flags & 0x02) {
-        frame.flags |= CAN_FRAME_BRS;
+    if (gs_frame->flags & GS_CAN_FLAG_BRS) {
+        frame.flags |= CAN_FRAME_BRS;  /* Bit rate switch */
+    }
+    if (gs_frame->flags & GS_CAN_FLAG_ESI) {
+        frame.flags |= CAN_FRAME_ESI;  /* Error state indicator */
     }
 
     frame.dlc = gs_frame->can_dlc;
-    memcpy(frame.data, gs_frame->data, MIN(frame.dlc, 8));
+    memcpy(frame.data, gs_frame->data, MIN(frame.dlc, sizeof(frame.data)));
 
     /* Send frame */
     ret = gs_usb_can_send_frame(&frame);
@@ -289,14 +300,49 @@ int gs_usb_process_host_frame(const struct gs_host_frame *gs_frame)
     if (ret == 0) {
         /* Echo frame back to host */
         struct gs_host_frame echo_frame = *gs_frame;
-        echo_frame.echo_id = echo_id_counter++;
-        echo_frame.timestamp_us = k_uptime_get_32();
+        echo_frame.timestamp_us = k_uptime_get_32() * 1000;  /* Convert to microseconds */
         
         /* Send echo frame via USB bulk IN endpoint */
         gs_usb_send_frame_to_host((const uint8_t*)&echo_frame, sizeof(echo_frame));
         
-        LOG_DBG("TX: ID=0x%08x DLC=%d", frame.id, frame.dlc);
+        LOG_DBG("TX: ID=0x%08x DLC=%d FD=%d", 
+                frame.id, frame.dlc, (frame.flags & CAN_FRAME_FDF) ? 1 : 0);
+    } else {
+        LOG_ERR("Failed to send CAN frame: %d", ret);
+        
+        /* Send error frame back to host */
+        struct gs_host_frame error_frame = *gs_frame;
+        error_frame.flags |= GS_CAN_FLAG_ERROR;
+        gs_usb_send_frame_to_host((const uint8_t*)&error_frame, sizeof(error_frame));
     }
 
+    return ret;
+}
+
+/**
+ * Start CAN interface
+ */
+int gs_usb_can_start(void)
+{
+    int ret = can_start(can_dev);
+    if (ret != 0) {
+        LOG_ERR("Failed to start CAN interface: %d", ret);
+    } else {
+        LOG_INF("CAN interface started");
+    }
+    return ret;
+}
+
+/**
+ * Stop CAN interface 
+ */
+int gs_usb_can_stop(void)
+{
+    int ret = can_stop(can_dev);
+    if (ret != 0) {
+        LOG_ERR("Failed to stop CAN interface: %d", ret);
+    } else {
+        LOG_INF("CAN interface stopped");
+    }
     return ret;
 }
