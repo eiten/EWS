@@ -1,10 +1,4 @@
 # EWS Board Configuration
 
-# Enable STM32Cube (required for USB)
-CONFIG_HAS_STM32CUBE=y
-
 # Enable GPIO
 CONFIG_GPIO=y
-
-# Enable CAN
-CONFIG_CAN=y
