@@ -1,5 +1,5 @@
 board:
   name: ews
-  vendor: ews
+  vendor: others
   socs:
     - name: stm32g0b1xx
