@@ -64,8 +64,6 @@
 &fdcan2 {
 	pinctrl-0 = <&fdcan2_rx_pb0 &fdcan2_tx_pb1>;
 	pinctrl-names = "default";
-	bit-rate = <500000>;
-	bit-rate-data = <2000000>;
 	status = "okay";
 };
 
