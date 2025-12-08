@@ -1,10 +1,5 @@
-identifier: ews
-name: EWS Board
-type: mcu
-arch: arm
-family: stm32
-series: stm32g0x
-socs:
-  - name: stm32g0b1xx
-testing:
-  default: true
+board:
+  name: ews
+  vendor: ews
+  socs:
+    - name: stm32g0b1xx
