@@ -35,6 +35,7 @@ Ein universelles Interface-Board (HAT) für Raspberry Pi 4/5 und Radxa Rock 5B z
     - [Bauteilbeschaffung](#bauteilbeschaffung)
   - [🛠️ Technische Spezifikationen](#️-technische-spezifikationen)
   - [📚 Weitere Ressourcen](#-weitere-ressourcen)
+  - [📝 Changelog](#-changelog)
   - [Lizenz](#lizenz)
 
 <!-- /code_chunk_output -->
@@ -90,7 +91,7 @@ Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häu
 - **Controller:** MaxLinear XR76208 (Synchroner Step-Down, 8A, COT)
 - **Eingangssicherung:** 5A SMD 1812 Slow Blow
 - **Verpolschutz:** SS56 Schottky-Diode
-- **Ausgangsspannung:** 5.25V (eingestellt über Feedback-Teiler: R_Top=15.5kΩ, R_Bottom=2.0kΩ)
+- **Ausgangsspannung:** 5.1V (eingestellt über Feedback-Teiler: R_Top=15kΩ, R_Bottom=2.0kΩ)
 - **Schaltfrequenz:** ca. 600kHz (eingestellt über Ron=30kOhm)
 - **Induktivität:** 3.3µH Shielded (Sunlord MDA1050-3R3M, Isat ca. 17A)
 - **Eingangskondensatoren:** 4x 10µF 1206 Keramik + 1x 100µF Elektrolyt/Polymer (Bulk)
@@ -231,6 +232,10 @@ sensor_mcu: hat
 - [Voron Documentation](https://docs.vorondesign.com/)
 - [STM32G0 Reference Manual](https://www.st.com/resource/en/reference_manual/rm0454-stm32g0x0-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 - [Katapult Firmware Flasher](https://github.com/Arksine/katapult)
+
+## 📝 Changelog
+
+Für detaillierte Informationen über Änderungen und Updates siehe [CHANGELOG.de.md](CHANGELOG.de.md).
 
 ## Lizenz
 

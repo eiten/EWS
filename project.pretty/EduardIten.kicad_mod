@@ -54,6 +54,17 @@
 			)
 		)
 	)
+	(fp_rect
+		(start -8.4 -0.8)
+		(end 12.5 0.6)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d038621d-8f2e-4891-9375-4ca820e1be14")
+	)
 	(fp_text user "created by"
 		(at -0.508 0 0)
 		(unlocked yes)
@@ -227,6 +238,10 @@
 				(thickness 0.15)
 			)
 		)
+	)
+	(group ""
+		(uuid "52c1fae9-7d9c-4912-8f2f-e2f7934ba30e")
+		(members "30805e3d-a6bd-47e9-ac44-987700ea2ea7" "d038621d-8f2e-4891-9375-4ca820e1be14")
 	)
 	(embedded_fonts no)
 )

@@ -7,8 +7,9 @@
 	(title_block
 		(title "EWS - Power, CANbus and USB HAT for 3D Printers")
 		(date "2025-12-04")
-		(rev "0.1")
+		(rev "${PROJEKT_REV}")
 		(company "Eduard Iten")
+		(comment 1 "CC BY-NC-SA 4.0")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x20_Odd_Even"
@@ -1394,6 +1395,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1916,7 +2100,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_3_Open"
+		(symbol "Jumper:Jumper_3_Bridged12"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -1932,7 +2116,7 @@
 					)
 				)
 			)
-			(property "Value" "Jumper_3_Open"
+			(property "Value" "Jumper_3_Bridged12"
 				(at 0 2.794 0)
 				(effects
 					(font
@@ -1958,7 +2142,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Jumper, 3-pole, both open"
+			(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1985,7 +2169,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Jumper_3_Open_0_0"
+			(symbol "Jumper_3_Bridged12_0_0"
 				(circle
 					(center -3.302 0)
 					(radius 0.508)
@@ -2020,11 +2204,11 @@
 					)
 				)
 			)
-			(symbol "Jumper_3_Open_0_1"
+			(symbol "Jumper_3_Bridged12_0_1"
 				(arc
-					(start -3.048 1.016)
-					(mid -1.651 1.4992)
-					(end -0.254 1.016)
+					(start -3.048 0.508)
+					(mid -1.651 0.9912)
+					(end -0.254 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -2035,20 +2219,8 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.508) (xy 0 -1.27)
+						(xy 0 -1.27) (xy 0 -0.508)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.651 1.4992)
-					(end 3.048 1.016)
 					(stroke
 						(width 0)
 						(type default)
@@ -2058,7 +2230,7 @@
 					)
 				)
 			)
-			(symbol "Jumper_3_Open_1_1"
+			(symbol "Jumper_3_Bridged12_1_1"
 				(pin passive line
 					(at -6.35 0 0)
 					(length 2.54)
@@ -4041,6 +4213,12 @@
 		(uuid "08717683-78b5-49fa-b305-089dc976fc75")
 	)
 	(junction
+		(at 88.9 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0d40f0e7-0b79-42b3-bd26-7f29fdf9ae2f")
+	)
+	(junction
 		(at 95.25 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4051,6 +4229,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1365103d-0c2b-4daa-84ae-b42e8b816998")
+	)
+	(junction
+		(at 102.87 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c8f54bd-58be-4068-ab75-8be67e075ad0")
 	)
 	(junction
 		(at 233.68 116.84)
@@ -4071,7 +4255,7 @@
 		(uuid "478cc323-9e68-499a-9de6-2139db1e01eb")
 	)
 	(junction
-		(at 102.87 39.37)
+		(at 102.87 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50a04c84-84d5-4454-8d94-cfb168d69ba2")
@@ -4271,10 +4455,6 @@
 		(uuid "7eba4853-8d41-43b2-b558-94e544c90400")
 	)
 	(no_connect
-		(at 77.47 82.55)
-		(uuid "8401645d-1706-436b-8250-5086622efaf4")
-	)
-	(no_connect
 		(at 77.47 62.23)
 		(uuid "8aefe811-dbc2-470c-8add-d4f6d6995d18")
 	)
@@ -4283,8 +4463,12 @@
 		(uuid "8b442d57-ccba-49f7-8821-9d7e2297740a")
 	)
 	(no_connect
+		(at 128.27 69.85)
+		(uuid "8f51cc40-5fec-4b3c-bffe-023e39f28d02")
+	)
+	(no_connect
 		(at 128.27 74.93)
-		(uuid "90cf0132-3cc2-4578-ab3d-cc70270c1b49")
+		(uuid "9aaab6ce-7798-4cb1-8cb0-d33d59bbf11d")
 	)
 	(no_connect
 		(at 236.22 83.82)
@@ -4438,6 +4622,26 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 34.29) (xy 91.44 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "142343c8-9372-48cc-a1e7-244466f47efb")
+	)
+	(wire
+		(pts
+			(xy 64.77 82.55) (xy 77.47 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16ad060b-8ebf-4de1-a244-482198cf4969")
+	)
+	(wire
+		(pts
 			(xy 128.27 85.09) (xy 130.81 85.09)
 		)
 		(stroke
@@ -4518,6 +4722,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 102.87) (xy 64.77 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fa440c6-ad7a-4fe8-b969-d2fa3b48050d")
+	)
+	(wire
+		(pts
 			(xy 111.76 156.21) (xy 111.76 153.67)
 		)
 		(stroke
@@ -4545,6 +4759,16 @@
 			(type default)
 		)
 		(uuid "38b8e088-bcf1-4b53-a7c5-43ada446573e")
+	)
+	(wire
+		(pts
+			(xy 86.36 36.83) (xy 88.9 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ad59802-0365-4851-a406-1938c7adac23")
 	)
 	(wire
 		(pts
@@ -4708,16 +4932,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 39.37) (xy 91.44 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6110ec0c-9fd8-43e5-877c-91d76f2e4611")
-	)
-	(wire
-		(pts
 			(xy 124.46 165.1) (xy 107.95 165.1)
 		)
 		(stroke
@@ -4798,6 +5012,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 39.37) (xy 102.87 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ca9c4c4-480b-4629-a3de-dc82cff0af01")
+	)
+	(wire
+		(pts
 			(xy 190.5 71.12) (xy 190.5 130.81)
 		)
 		(stroke
@@ -4815,6 +5039,16 @@
 			(type default)
 		)
 		(uuid "80ca9ebb-c73a-48d8-aefc-83c53477482a")
+	)
+	(wire
+		(pts
+			(xy 64.77 85.09) (xy 64.77 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80dbdc36-dc58-4036-a5cb-636b74c0da17")
 	)
 	(wire
 		(pts
@@ -5018,13 +5252,23 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 33.02) (xy 102.87 39.37)
+			(xy 102.87 30.48) (xy 102.87 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9247d839-e77e-411c-8f4e-375ae1cd0930")
+	)
+	(wire
+		(pts
+			(xy 88.9 39.37) (xy 88.9 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "924bbd5b-f85d-48e0-b686-5603e319f1e3")
 	)
 	(wire
 		(pts
@@ -5078,7 +5322,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 39.37) (xy 102.87 49.53)
+			(xy 102.87 34.29) (xy 102.87 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5135,16 +5379,6 @@
 			(type default)
 		)
 		(uuid "a3ac2f4d-b4bb-47ff-b21b-7e340821526b")
-	)
-	(wire
-		(pts
-			(xy 130.81 69.85) (xy 128.27 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a9abc7b1-6f11-4d18-b0f1-9fd9963f15b6")
 	)
 	(wire
 		(pts
@@ -5218,6 +5452,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 92.71) (xy 64.77 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45f6a3f-6683-44a3-980e-e5ecae489a7b")
+	)
+	(wire
+		(pts
 			(xy 163.83 25.4) (xy 184.15 25.4)
 		)
 		(stroke
@@ -5248,16 +5492,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 39.37) (xy 105.41 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b89cb28d-e4c5-4579-babf-f72f17c8fc44")
-	)
-	(wire
-		(pts
 			(xy 248.92 71.12) (xy 251.46 71.12)
 		)
 		(stroke
@@ -5265,6 +5499,26 @@
 			(type default)
 		)
 		(uuid "b94f0f2c-e4a8-4573-87de-3280f4d75193")
+	)
+	(wire
+		(pts
+			(xy 91.44 39.37) (xy 88.9 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbf0f742-a40d-40a1-9646-53132c75b4a4")
+	)
+	(wire
+		(pts
+			(xy 102.87 39.37) (xy 102.87 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc1ddd79-edc1-4d7e-acd4-5feceefc9ad0")
 	)
 	(wire
 		(pts
@@ -5508,6 +5762,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 77.47) (xy 128.27 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e829826f-82cb-46a1-9ec6-83a7236a58e0")
+	)
+	(wire
+		(pts
 			(xy 149.86 113.03) (xy 149.86 115.57)
 		)
 		(stroke
@@ -5518,7 +5782,17 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 39.37) (xy 102.87 39.37)
+			(xy 88.9 36.83) (xy 88.9 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb780e35-0e08-440c-a9ce-953013beee09")
+	)
+	(wire
+		(pts
+			(xy 99.06 34.29) (xy 102.87 34.29)
 		)
 		(stroke
 			(width 0)
@@ -5742,7 +6016,7 @@
 	)
 	(global_label "HE1 ON"
 		(shape output)
-		(at 130.81 69.85 0)
+		(at 130.81 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5750,9 +6024,31 @@
 			)
 			(justify left)
 		)
-		(uuid "74906e22-7dea-467d-b4fe-2b93381c1c79")
+		(uuid "9358b71f-b4a9-4887-baed-06ed2e06f2c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 141.1128 69.85 0)
+			(at 141.1128 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CAN L"
+		(shape bidirectional)
+		(at 154.94 170.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "93800411-d9fc-4091-ac30-bccc5e6648a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.7213 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5806,28 +6102,6 @@
 			)
 		)
 	)
-	(global_label "CAN L"
-		(shape bidirectional)
-		(at 154.94 170.18 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5308521-2500-4890-afdb-6e0709ebf952")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.7213 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(symbol
 		(lib_id "Device:C")
 		(at 102.87 153.67 270)
@@ -5839,7 +6113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a4af829-0d1d-4876-866f-2aa9742e5989")
-		(property "Reference" "C403"
+		(property "Reference" "C304"
 			(at 102.87 146.05 90)
 			(effects
 				(font
@@ -5882,6 +6156,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C307331"
+			(at 102.87 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL05B104KB54PNC"
+			(at 102.87 153.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "86bb14ce-b303-484f-af62-313460375ca9")
 		)
@@ -5891,14 +6183,14 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "C403")
+					(reference "C304")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_3_Open")
+		(lib_id "Jumper:Jumper_3_Bridged12")
 		(at 53.34 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5906,7 +6198,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b935768-cc50-46b5-8e24-7f50a502deb1")
-		(property "Reference" "JP306"
+		(property "Reference" "JP301"
 			(at 53.34 133.35 0)
 			(effects
 				(font
@@ -5914,7 +6206,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_3_Open"
+		(property "Value" "~"
 			(at 53.34 133.35 0)
 			(effects
 				(font
@@ -5923,7 +6215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "project:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_custom"
 			(at 53.34 137.16 0)
 			(effects
 				(font
@@ -5941,7 +6233,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, both open"
+		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
 			(at 53.34 137.16 0)
 			(effects
 				(font
@@ -5989,7 +6281,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP306")
+					(reference "JP301")
 					(unit 1)
 				)
 			)
@@ -6000,11 +6292,11 @@
 		(at 189.23 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "0c74541b-ecc6-478e-bb65-b307f57d7033")
-		(property "Reference" "JP302"
+		(property "Reference" "JP304"
 			(at 185.42 21.59 0)
 			(effects
 				(font
@@ -6023,7 +6315,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 189.23 22.86 0)
 			(effects
 				(font
@@ -6086,7 +6378,7 @@
 		(instances
 			(project ""
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP302")
+					(reference "JP304")
 					(unit 1)
 				)
 			)
@@ -6102,7 +6394,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ee55932-cc9e-4408-aa32-c5509227fb6f")
-		(property "Reference" "#PWR0307"
+		(property "Reference" "#PWR0312"
 			(at 251.46 41.91 0)
 			(effects
 				(font
@@ -6152,7 +6444,198 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0307")
+					(reference "#PWR0312")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 95.25 39.37 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "269ddb1e-24da-4b59-9b70-54fd0fe7ad70")
+		(property "Reference" "C303"
+			(at 95.25 46.99 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10u"
+			(at 95.25 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 91.44 40.3352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL10A106MA8NRNC"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C96446"
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 95.25 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "afc191fe-9e91-4e35-a2fc-b7fe37112057")
+		)
+		(pin "1"
+			(uuid "e8f43701-3406-4e1e-abca-f2fe6cd52a05")
+		)
+		(instances
+			(project "EWS"
+				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
+					(reference "C303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 64.77 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29a0ce5f-96ae-4f7a-8795-4e38ec421029")
+		(property "Reference" "R301"
+			(at 67.31 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "330R"
+			(at 67.31 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 62.992 88.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "0402WGF3300TCE"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25104"
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 64.77 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d83183d2-9165-448d-a64f-9db83265d8b8")
+		)
+		(pin "2"
+			(uuid "d4667911-5860-4c23-af2b-c1da10170a3a")
+		)
+		(instances
+			(project "EWS"
+				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
+					(reference "R301")
 					(unit 1)
 				)
 			)
@@ -6160,7 +6643,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 39.37 270)
+		(at 86.36 36.83 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6168,8 +6651,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c716146-cdef-4147-bced-ed7627b4a5da")
-		(property "Reference" "#PWR0302"
-			(at 82.55 39.37 0)
+		(property "Reference" "#PWR0304"
+			(at 80.01 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6178,7 +6661,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 87.63 35.56 90)
+			(at 85.09 33.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6186,7 +6669,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 39.37 0)
+			(at 86.36 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6195,7 +6678,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 39.37 0)
+			(at 86.36 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6204,7 +6687,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 39.37 0)
+			(at 86.36 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6218,7 +6701,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0302")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -6234,7 +6717,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36834603-55df-4af4-8a72-b0824a32fbc7")
-		(property "Reference" "U301"
+		(property "Reference" "U302"
 			(at 105.0133 46.99 0)
 			(effects
 				(font
@@ -6272,6 +6755,33 @@
 			)
 		)
 		(property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 128KB flash, 144KB RAM, 64 MHz, 1.7-3.6V, 30 GPIO, UFQFPN32"
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C5159549"
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "STM32G0B1KBU6"
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 102.87 77.47 0)
 			(effects
 				(font
@@ -6382,7 +6892,7 @@
 		(instances
 			(project ""
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "U301")
+					(reference "U302")
 					(unit 1)
 				)
 			)
@@ -6407,7 +6917,7 @@
 				)
 			)
 		)
-		(property "Value" "BOOT0"
+		(property "Value" "TS-1088"
 			(at 142.24 110.49 0)
 			(effects
 				(font
@@ -6442,6 +6952,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C720477"
+			(at 142.24 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "TS-1088-AR02016"
+			(at 142.24 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a829c9c1-3dae-4099-ab4d-08efb9b1f278")
 		)
@@ -6467,7 +6995,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52938bc1-c272-4873-b7a5-d3837e23e808")
-		(property "Reference" "R405"
+		(property "Reference" "R304"
 			(at 144.78 149.86 90)
 			(effects
 				(font
@@ -6483,7 +7011,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 144.78 157.988 90)
 			(effects
 				(font
@@ -6510,7 +7038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part #" ""
+		(property "Manufacturer Part #" "0603WAF1200T5E"
 			(at 144.78 156.21 0)
 			(effects
 				(font
@@ -6519,7 +7047,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" ""
+		(property "LCSC Part #" "C22787"
 			(at 144.78 156.21 0)
 			(effects
 				(font
@@ -6546,7 +7074,113 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "R405")
+					(reference "R304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 64.77 99.06 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5abb95be-7ba5-4214-9045-a8bd0382a05e")
+		(property "Reference" "D301"
+			(at 68.58 99.3774 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GREEN"
+			(at 68.58 101.9174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "KT-0805G"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C2297"
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" ""
+			(at 64.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "460cc3ff-0a74-4622-ac6a-35914a93c2fb")
+		)
+		(pin "2"
+			(uuid "ae45d7a5-c2df-4cb4-9f0e-9d8cdade3a1d")
+		)
+		(instances
+			(project "EWS"
+				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
+					(reference "D301")
 					(unit 1)
 				)
 			)
@@ -6557,11 +7191,11 @@
 		(at 189.23 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "60ffad59-3245-4ae6-bf65-f697a070a425")
-		(property "Reference" "JP303"
+		(property "Reference" "JP305"
 			(at 185.42 24.13 0)
 			(effects
 				(font
@@ -6580,7 +7214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 189.23 25.4 0)
 			(effects
 				(font
@@ -6643,7 +7277,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP303")
+					(reference "JP305")
 					(unit 1)
 				)
 			)
@@ -6651,7 +7285,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 95.25 39.37 90)
+		(at 95.25 34.29 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6660,7 +7294,7 @@
 		(fields_autoplaced yes)
 		(uuid "66e83caa-e1df-4801-8291-7a74d8310ac8")
 		(property "Reference" "C302"
-			(at 95.25 31.75 90)
+			(at 95.25 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6668,7 +7302,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 95.25 34.29 90)
+			(at 95.25 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6676,7 +7310,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 99.06 38.4048 0)
+			(at 99.06 33.3248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6685,7 +7319,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 95.25 39.37 0)
+			(at 95.25 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6694,7 +7328,25 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 95.25 39.37 0)
+			(at 95.25 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C307331"
+			(at 95.25 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL05B104KB54PNC"
+			(at 95.25 34.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6728,7 +7380,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68c468a3-a452-4d7b-a57a-f4f53f86667f")
-		(property "Reference" "#PWR0305"
+		(property "Reference" "#PWR0310"
 			(at 149.86 116.84 0)
 			(effects
 				(font
@@ -6778,7 +7430,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0305")
+					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
@@ -6786,7 +7438,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 102.87 33.02 0)
+		(at 102.87 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6794,8 +7446,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d88f717-1071-4ba8-ab97-3c790b2a6357")
-		(property "Reference" "#PWR0303"
-			(at 102.87 36.83 0)
+		(property "Reference" "#PWR0307"
+			(at 102.87 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6804,7 +7456,7 @@
 			)
 		)
 		(property "Value" "3V3"
-			(at 102.87 27.94 0)
+			(at 102.87 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6812,7 +7464,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 33.02 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6821,7 +7473,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 33.02 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6830,7 +7482,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 102.87 33.02 0)
+			(at 102.87 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6844,14 +7496,14 @@
 		(instances
 			(project ""
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0303")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_3_Open")
+		(lib_id "Jumper:Jumper_3_Bridged12")
 		(at 69.85 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6859,7 +7511,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f061a6f-29ea-4d59-9d7a-1fc698feee15")
-		(property "Reference" "JP301"
+		(property "Reference" "JP302"
 			(at 69.85 127 0)
 			(effects
 				(font
@@ -6867,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Value" "Jumper_3_Open"
+		(property "Value" "~"
 			(at 69.85 127 0)
 			(effects
 				(font
@@ -6876,7 +7528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+		(property "Footprint" "project:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_custom"
 			(at 69.85 130.81 0)
 			(effects
 				(font
@@ -6894,7 +7546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, both open"
+		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
 			(at 69.85 130.81 0)
 			(effects
 				(font
@@ -6942,7 +7594,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP301")
+					(reference "JP302")
 					(unit 1)
 				)
 			)
@@ -6966,7 +7618,7 @@
 				)
 			)
 		)
-		(property "Value" "RST"
+		(property "Value" "TS-1088"
 			(at 60.96 52.07 0)
 			(effects
 				(font
@@ -7001,6 +7653,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C720477"
+			(at 60.96 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "TS-1088-AR02016"
+			(at 60.96 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "82ae4eca-8b7b-4177-918c-61613d034c51")
 		)
@@ -7026,7 +7696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "77215583-7d50-48f3-9e18-90d676707801")
-		(property "Reference" "R303"
+		(property "Reference" "R305"
 			(at 158.75 99.06 90)
 			(effects
 				(font
@@ -7069,6 +7739,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C11702"
+			(at 158.75 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "0402WGF1001TCE"
+			(at 158.75 104.14 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "764b6b57-018b-4443-8ccf-24456f94202c")
 		)
@@ -7078,44 +7766,23 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "R303")
+					(reference "R305")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "NamedTestPoint_1")
-		(lib_id "project:NamedTestPoint")
-		(at 105.41 39.37 270)
+		(lib_id "power:GND")
+		(at 64.77 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a1b7eac-298e-40b8-965c-10ad96936eaf")
-		(property "Reference" "TP302"
-			(at 109.9821 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "${SHORT_NET_NAME(1)}"
-			(at 110.49 39.37 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "project:NAMED_TEST_POINT"
-			(at 105.41 44.45 0)
+		(uuid "84204151-014c-41a9-be08-b686b0332f78")
+		(property "Reference" "#PWR0302"
+			(at 64.77 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7123,8 +7790,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 105.41 44.45 0)
+		(property "Value" "GND"
+			(at 64.77 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7132,8 +7807,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
-			(at 105.41 39.37 0)
+		(property "Datasheet" ""
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7141,26 +7816,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer Part #" ""
-			(at 105.41 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" ""
-			(at 105.41 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FT Rotation Offset" ""
-			(at 105.41 39.37 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7169,12 +7826,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6602ce6e-cce6-4439-8393-fbe750cd1b9e")
+			(uuid "6b4c89bc-de61-46e9-9ce3-ca5b3e05e722")
 		)
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "TP302")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -7189,7 +7846,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "849ef766-13d0-483a-ad20-0ccd6b012b0a")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR0308"
 			(at 102.87 124.46 0)
 			(effects
 				(font
@@ -7239,7 +7896,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0304")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -7255,7 +7912,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84b72d20-c41d-4238-8025-72723ac203d6")
-		(property "Reference" "#PWR0306"
+		(property "Reference" "#PWR0311"
 			(at 233.68 64.77 0)
 			(effects
 				(font
@@ -7305,7 +7962,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0306")
+					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
@@ -7316,11 +7973,11 @@
 		(at 133.35 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9132d5c3-00f6-4b44-9860-7bdb52c3c569")
-		(property "Reference" "JP401"
+		(property "Reference" "JP303"
 			(at 129.54 154.94 0)
 			(effects
 				(font
@@ -7339,7 +7996,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 133.35 156.21 0)
 			(effects
 				(font
@@ -7402,7 +8059,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP401")
+					(reference "JP303")
 					(unit 1)
 				)
 			)
@@ -7418,7 +8075,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4bbe12e-234d-49e6-87be-e5dbfbdb1a28")
-		(property "Reference" "R301"
+		(property "Reference" "R302"
 			(at 78.74 17.78 90)
 			(effects
 				(font
@@ -7461,6 +8118,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C11702"
+			(at 78.74 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "0402WGF1001TCE"
+			(at 78.74 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "614e64a7-1d15-4361-a866-a028bd6cfbfa")
 		)
@@ -7470,7 +8145,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "R301")
+					(reference "R302")
 					(unit 1)
 				)
 			)
@@ -7481,11 +8156,11 @@
 		(at 189.23 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a8b02b07-10e4-4d66-b7c8-3e414115b962")
-		(property "Reference" "JP304"
+		(property "Reference" "JP306"
 			(at 185.42 26.67 0)
 			(effects
 				(font
@@ -7504,7 +8179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 189.23 27.94 0)
 			(effects
 				(font
@@ -7567,7 +8242,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP304")
+					(reference "JP306")
 					(unit 1)
 				)
 			)
@@ -7583,7 +8258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9d9704e-e4bb-430d-a2f8-52a4b7f9e201")
-		(property "Reference" "#PWR0308"
+		(property "Reference" "#PWR0313"
 			(at 251.46 129.54 0)
 			(effects
 				(font
@@ -7633,7 +8308,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0308")
+					(reference "#PWR0313")
 					(unit 1)
 				)
 			)
@@ -7649,7 +8324,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab8711b4-2aeb-4c0a-b04d-1e5baa2e5538")
-		(property "Reference" "C304"
+		(property "Reference" "C306"
 			(at 242.57 48.26 90)
 			(effects
 				(font
@@ -7692,6 +8367,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C12891"
+			(at 242.57 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL31A226KAHNNNE"
+			(at 242.57 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f097fe08-13e9-4d7e-b3f7-01523d6067f4")
 		)
@@ -7701,7 +8394,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "C304")
+					(reference "C306")
 					(unit 1)
 				)
 			)
@@ -7717,7 +8410,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b301926f-a829-4909-ab2b-8ba5fd6bbfc5")
-		(property "Reference" "#PWR0309"
+		(property "Reference" "#PWR0305"
 			(at 95.25 153.67 0)
 			(effects
 				(font
@@ -7767,7 +8460,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0309")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
@@ -7783,7 +8476,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b419bb27-9a9f-4218-83e1-30541739945e")
-		(property "Reference" "R302"
+		(property "Reference" "R303"
 			(at 128.27 113.03 90)
 			(effects
 				(font
@@ -7826,6 +8519,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25744"
+			(at 128.27 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "0402WGF1002TCE"
+			(at 128.27 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16cf9373-b715-4bd2-ba32-dfbd38caea38")
 		)
@@ -7835,7 +8546,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "R302")
+					(reference "R303")
 					(unit 1)
 				)
 			)
@@ -7894,6 +8605,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C307331"
+			(at 60.96 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL05B104KB54PNC"
+			(at 60.96 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b9b55d4-17b3-4417-8704-c779470c870f")
 		)
@@ -7919,7 +8648,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7bdfce2-01fd-4ed3-bd0b-602a3f09a722")
-		(property "Reference" "#PWR0407"
+		(property "Reference" "#PWR0303"
 			(at 76.2 154.94 0)
 			(effects
 				(font
@@ -7969,7 +8698,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0407")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -7985,7 +8714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba527b96-e258-46e6-81f1-9a0a45d3ab2f")
-		(property "Reference" "U401"
+		(property "Reference" "U301"
 			(at 92.1319 154.94 0)
 			(effects
 				(font
@@ -8031,6 +8760,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C2875699"
+			(at 95.25 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "TJA1051TK/3/1J"
+			(at 95.25 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "bc3e84e6-fd7f-4d98-b8da-6aa2ac140497")
 		)
@@ -8061,7 +8808,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "U401")
+					(reference "U301")
 					(unit 1)
 				)
 			)
@@ -8072,11 +8819,11 @@
 		(at 189.23 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "bae099d3-0d70-4cdc-9a90-97887b8a7758")
-		(property "Reference" "JP305"
+		(property "Reference" "JP307"
 			(at 185.42 29.21 0)
 			(effects
 				(font
@@ -8095,7 +8842,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+		(property "Footprint" "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm"
 			(at 189.23 30.48 0)
 			(effects
 				(font
@@ -8158,7 +8905,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "JP305")
+					(reference "JP307")
 					(unit 1)
 				)
 			)
@@ -8171,7 +8918,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -8481,7 +9228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da692e5f-8da8-4597-9812-2532613de9f1")
-		(property "Reference" "#PWR0403"
+		(property "Reference" "#PWR0309"
 			(at 111.76 162.56 0)
 			(effects
 				(font
@@ -8532,7 +9279,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0403")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -8544,12 +9291,12 @@
 		(at 146.05 92.71 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e25dd4a3-d3ba-4062-82c7-027cdb406a13")
-		(property "Reference" "TP304"
+		(property "Reference" "TP303"
 			(at 150.6221 95.25 0)
 			(effects
 				(font
@@ -8628,7 +9375,7 @@
 		(instances
 			(project ""
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "TP304")
+					(reference "TP303")
 					(unit 1)
 				)
 			)
@@ -8711,7 +9458,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f37f8ded-0902-4427-9b5e-9f5101a36893")
-		(property "Reference" "D404"
+		(property "Reference" "D302"
 			(at 128.27 176.5299 0)
 			(effects
 				(font
@@ -8720,7 +9467,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NUP2105L"
+		(property "Value" "PESD1CAN"
 			(at 128.27 179.0699 0)
 			(effects
 				(font
@@ -8757,6 +9504,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C907838"
+			(at 121.92 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "PESD1CAN"
+			(at 121.92 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "143dd185-b28a-4daf-a8e0-b4e0e3b51379")
 		)
@@ -8769,7 +9534,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "D404")
+					(reference "D302")
 					(unit 1)
 				)
 			)
@@ -8786,7 +9551,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f41bd99a-66e9-4241-9f5b-30741d345b91")
-		(property "Reference" "#PWR0405"
+		(property "Reference" "#PWR0306"
 			(at 95.25 194.31 0)
 			(effects
 				(font
@@ -8837,7 +9602,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "#PWR0405")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -8849,12 +9614,12 @@
 		(at 146.05 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f477e734-f1d4-4b34-9255-a04f9102a500")
-		(property "Reference" "TP303"
+		(property "Reference" "TP302"
 			(at 150.6221 92.71 0)
 			(effects
 				(font
@@ -8933,7 +9698,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "TP303")
+					(reference "TP302")
 					(unit 1)
 				)
 			)
@@ -8949,7 +9714,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff12163f-c025-4213-af3d-e3a9b53f3d4f")
-		(property "Reference" "C303"
+		(property "Reference" "C305"
 			(at 242.57 34.29 90)
 			(effects
 				(font
@@ -8992,6 +9757,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C12891"
+			(at 242.57 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part #" "CL31A226KAHNNNE"
+			(at 242.57 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1c00e50e-d884-40ef-bad7-fad14b232102")
 		)
@@ -9001,7 +9784,7 @@
 		(instances
 			(project "EWS"
 				(path "/4ae99543-64c8-472f-befd-04c32f138656/0e847eb1-f7d3-4059-9388-5e4314635711"
-					(reference "C303")
+					(reference "C305")
 					(unit 1)
 				)
 			)

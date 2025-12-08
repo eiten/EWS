@@ -35,6 +35,7 @@ A universal interface board (HAT) for Raspberry Pi 4/5 and Radxa Rock 5B designe
     - [Component Sourcing](#component-sourcing)
   - [🛠️ Technical Specifications](#️-technical-specifications)
   - [📚 Additional Resources](#-additional-resources)
+  - [📝 Changelog](#-changelog)
   - [License](#license)
 
 <!-- /code_chunk_output -->
@@ -90,7 +91,7 @@ This board was designed to solve multiple critical issues commonly encountered i
 - **Controller:** MaxLinear XR76208 (Synchronous Step-Down, 8A, COT)
 - **Input Fuse:** 5A SMD 1812 Slow Blow
 - **Reverse Polarity Protection:** SS56 Schottky diode
-- **Output Voltage:** 5.25V (set via feedback divider: R_Top=15.5kΩ, R_Bottom=2.0kΩ)
+- **Output Voltage:** 5.1V (set via feedback divider: R_Top=15kΩ, R_Bottom=2.0kΩ)
 - **Switching Frequency:** ~600kHz (set via Ron=30kOhm)
 - **Inductance:** 3.3µH Shielded (Sunlord MDA1050-3R3M, Isat ~17A)
 - **Input Capacitors:** 4x 10µF 1206 ceramic + 1x 100µF electrolytic/polymer (bulk)
@@ -231,6 +232,10 @@ sensor_mcu: hat
 - [Voron Documentation](https://docs.vorondesign.com/)
 - [STM32G0 Reference Manual](https://www.st.com/resource/en/reference_manual/rm0454-stm32g0x0-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
 - [Katapult Firmware Flasher](https://github.com/Arksine/katapult)
+
+## 📝 Changelog
+
+For detailed information about changes and updates, see [CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
