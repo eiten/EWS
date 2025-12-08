@@ -1,4 +1,0 @@
-[manifest]
-path = canfd_cdc_composite
-file = west.yml
-
