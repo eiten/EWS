@@ -7,6 +7,17 @@ Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [Unreleased]
+
+### Geändert
+- **Produktion:** Testpunkte TP202/TP203 von Stückliste ausgeschlossen
+- **JLCPCB Optimierung:** Rotations-Offsets für automatische Bestückung angepasst
+  - U202/U301: FT Rotation Offset 270°
+  - U401: FT Rotation Offset 180°
+
+### Technische Details
+- **Fertigungseffizienz:** Optimierte Bauteil-Orientierung reduziert Produktionszeit
+
 ## [Rev. 0.3] - 2025-12-09
 
 ### Hinzugefügt

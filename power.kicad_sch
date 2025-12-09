@@ -4978,7 +4978,7 @@
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "354479bd-9d6e-45c7-8092-c0fe001a6165")
@@ -6689,7 +6689,7 @@
 		(at 237.49 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
@@ -7092,6 +7092,15 @@
 			)
 		)
 		(property "Manufacturer Part #" "XR76208ELTR-F"
+			(at 163.83 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "270"
 			(at 163.83 63.5 0)
 			(effects
 				(font
