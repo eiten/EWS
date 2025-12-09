@@ -7,6 +7,16 @@ Alle wichtigen Änderungen an diesem Projekt werden in dieser Datei dokumentiert
 Das Format basiert auf [Keep a Changelog](https://keepachangelog.com/de/1.0.0/),
 und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
+## [Rev. 0.3] - 2025-12-09
+
+### Hinzugefügt
+- **CAN-Transceiver:** 10µF Kondensator C304 für verbesserte Stabilität der CAN-Kommunikation
+- **PCB Layout:** QR Code Platzhalter für Seriennummer auf der Platine
+
+### Technische Details
+- **Verbesserte Signal-Integrität:** Zusätzliche Filterung am CAN-Transceiver für stabilere Datenübertragung
+- **Rückverfolgbarkeit:** QR Code ermöglicht eindeutige Identifikation und Dokumentation
+
 ## [Rev. 0.2] - 2025-12-08
 
 ### Verbesserungen
