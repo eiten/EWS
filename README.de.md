@@ -230,6 +230,7 @@ sensor_mcu: hat
 
 ## 📚 Weitere Ressourcen
 
+- [Bauteil-Datenblätter](doc/datasheets/README.md)
 - [Klipper Dokumentation](https://www.klipper3d.org/Config_Reference.html)
 - [CAN-Bus Setup Guide](https://www.klipper3d.org/CANBUS.html)
 - [Voron Documentation](https://docs.vorondesign.com/)

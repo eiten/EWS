@@ -58,4 +58,9 @@ fp-info-cache
 # Cache files
 project.kicad_sym
 fp-lib-table
-sym-lib-table
+fabrication-toolkit-options.json
+EWS.pdf
+EWS.step
+
+# Ignore venv directory
+tools/venv/

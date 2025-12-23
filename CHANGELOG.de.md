@@ -9,6 +9,9 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Hinzugefügt
+- **Dokumentation:** Datenblätter für alle Komponenten mit einer LCSC-Teilenummer in `doc/datasheets` hinzugefügt.
+
 ### Behoben
 - **USB-Hub-Controller (U401/CH334):** Pin 4 (XO) auf GND gelegt, um den Betrieb ohne Kristall zu ermöglichen
 - **DC/DC-Wandler (U202/XR76208):** Enable-Beschaltung von Spannungsteiler auf Zenerdiode geändert, um 12V-Betrieb zu ermöglichen

@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Added
+- **Documentation:** Added datasheets for all components with an LCSC part number in `doc/datasheets`.
+
 ### Fixed
 - **USB Hub Controller (U401/CH334):** Pin 4 (XO) connected to GND to enable operation without crystal
 - **DC/DC Converter (U202/XR76208):** Enable circuit changed from voltage divider to Zener diode to enable 12V operation
