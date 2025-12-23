@@ -89,6 +89,7 @@ This board was designed to solve multiple critical issues commonly encountered i
 ### ⚡ DC/DC Converter (5V Output)
 
 - **Controller:** MaxLinear XR76208 (Synchronous Step-Down, 8A, COT)
+- **Input Voltage:** 12-24V DC (enable circuit with Zener diode)
 - **Input Fuse:** 5A SMD 1812 Slow Blow
 - **Reverse Polarity Protection:** SS56 Schottky diode
 - **Output Voltage:** 5.1V (set via feedback divider: R_Top=15kΩ, R_Bottom=2.0kΩ)
@@ -99,7 +100,7 @@ This board was designed to solve multiple critical issues commonly encountered i
 - **Stability:** Feed-forward capacitor (Cff) 1nF parallel to upper feedback resistor
 - **Soft-Start:** 100nF at SS pin (~6ms startup time)
 - **Current Limit:** 5.1kΩ resistor (~10.2A limit)
-- **Enable:** Voltage divider from 24V (100kΩ upper, 22kΩ lower) = ~4.3V at pin
+- **Enable:** Zener diode-based circuit for 12-24V input voltage range
 
 ### 🔌 Logic Power Supply (Power Path)
 
@@ -130,7 +131,7 @@ This board was designed to solve multiple critical issues commonly encountered i
 
 - **Controller:** WCH CH334F (QFN-24)
 - **Speed:** USB 2.0 High Speed (480 Mbit/s) with MTT
-- **Clocking:** Internal (crystal-less), XI/XO pins left open
+- **Clocking:** Internal (crystal-less), XO pin connected to GND for internal oscillator mode
 - **Supply:** V5 to +5V_LOGIC
 - **Upstream:** To Raspberry Pi Header (USB loopback cable required) or USB-C input
 - **Downstream Ports:**
@@ -139,14 +140,16 @@ This board was designed to solve multiple critical issues commonly encountered i
   - USB-A connector (vertical, for webcam)
 
 **USB Port Protection:**
-- **Concept:** 100µF electrolytic tank at +5V_PWR, followed by polyfuse, followed by 22µF ceramic at connector
+- **Concept:** 100µF electrolytic tank at +5V_PWR, followed by TPS2557 power distribution switch, followed by 22µF ceramic at connector
 - **USB-C Port (Screen):**
-  - Polyfuse: 4.0A hold current (hot chamber derating considered)
-  - CC Lines: CC1 and CC2 each with 10kΩ resistor to VBUS (behind fuse) for 3A advertisement
+  - TPS2557: Power distribution switch with backfeed protection, overcurrent/short-circuit protection
+  - Current limiting: Programmable limit via external resistor
+  - CC Lines: CC1 and CC2 each with 10kΩ resistor to VBUS (behind switch) for 3A advertisement
   - ESD Protection: SRV05-4 TVS array
 - **USB-A Port (Webcam):**
-  - Polyfuse: 1.5A hold current
-- **ESD Protection:** SRV05-4 TVS array
+  - TPS2557: Power distribution switch with backfeed protection, overcurrent/short-circuit protection
+  - Current limiting: Programmable limit via external resistor
+  - ESD Protection: SRV05-4 TVS array
 
 ## 📋 Klipper Configuration
 

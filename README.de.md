@@ -89,6 +89,7 @@ Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häu
 ### ⚡ DC/DC Wandler (5V Ausgang)
 
 - **Controller:** MaxLinear XR76208 (Synchroner Step-Down, 8A, COT)
+- **Eingangsspannung:** 12-24V DC (Enable-Schaltung mit Zenerdiode)
 - **Eingangssicherung:** 5A SMD 1812 Slow Blow
 - **Verpolschutz:** SS56 Schottky-Diode
 - **Ausgangsspannung:** 5.1V (eingestellt über Feedback-Teiler: R_Top=15kΩ, R_Bottom=2.0kΩ)
@@ -99,7 +100,7 @@ Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häu
 - **Stabilität:** Feed-Forward Kondensator (Cff) 1nF parallel zum oberen Feedback-Widerstand
 - **Soft-Start:** 100nF an Pin SS (ca. 6ms Anlaufzeit)
 - **Stromlimit:** 5.1kΩ Widerstand (~10.2A Grenzwert)
-- **Enable:** Spannungsteiler von 24V (100kΩ oben, 22kΩ unten) = ca. 4.3V am Pin
+- **Enable:** Zenerdioden-basierte Schaltung für 12-24V Eingangsspannungsbereich
 
 ### 🔌 Logik-Spannungsversorgung (Power Path)
 
@@ -130,7 +131,7 @@ Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häu
 
 - **Controller:** WCH CH334F (QFN-24)
 - **Geschwindigkeit:** USB 2.0 High Speed (480 Mbit/s) mit MTT
-- **Taktung:** Intern (Crystal-less), XI/XO Pins offen gelassen
+- **Taktung:** Intern (Crystal-less), XO Pin auf GND gelegt für internen Oszillator-Modus
 - **Versorgung:** V5 an +5V_LOGIC
 - **Upstream:** Zum Raspberry Pi Header (USB Loopback Kabel erforderlich) oder USB-C Input
 - **Downstream Ports:**
@@ -139,14 +140,16 @@ Dieses Board wurde entwickelt, um mehrere kritische Probleme zu lösen, die häu
   - USB-A Buchse (Vertikal, für Webcam)
 
 **USB Port Absicherung:**
-- **Konzept:** 100µF Elko als Tank an +5V_PWR, gefolgt von Polyfuse, gefolgt von 22µF Keramik an der Buchse
+- **Konzept:** 100µF Elko als Tank an +5V_PWR, gefolgt von TPS2557 Power Distribution Switch, gefolgt von 22µF Keramik an der Buchse
 - **USB-C Port (Screen):**
-  - Polyfuse: 4.0A Hold Current (Derating für Hot Chamber berücksichtigt)
-  - CC-Leitungen: CC1 und CC2 jeweils mit eigenem 10kOhm Widerstand an VBUS (hinter der Sicherung) gezogen (Source 3A Advertisement)
+  - TPS2557: Power Distribution Switch mit Backfeed-Schutz, Überstrom-/Kurzschlussschutz
+  - Strombegrenzung: Programmierbarer Limit durch externen Widerstand
+  - CC-Leitungen: CC1 und CC2 jeweils mit eigenem 10kOhm Widerstand an VBUS (hinter dem Switch) gezogen (Source 3A Advertisement)
   - ESD-Schutz: SRV05-4 TVS-Array
 - **USB-A Port (Webcam):**
-  - Polyfuse: 1.5A Hold Current
-- **ESD-Schutz:** SRV05-4 TVS-Array
+  - TPS2557: Power Distribution Switch mit Backfeed-Schutz, Überstrom-/Kurzschlussschutz
+  - Strombegrenzung: Programmierbarer Limit durch externen Widerstand
+  - ESD-Schutz: SRV05-4 TVS-Array
 
 ## 📋 Klipper Konfiguration
 

@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Fixed
+- **USB Hub Controller (U401/CH334):** Pin 4 (XO) connected to GND to enable operation without crystal
+- **DC/DC Converter (U202/XR76208):** Enable circuit changed from voltage divider to Zener diode to enable 12V operation
+- **USB Outputs:** Fuses replaced with TPS2557 power distribution switches to prevent backfeeding
+
 ### Changed
 - **Production:** Test points TP202/TP203 excluded from BOM
 - **JLCPCB Optimization:** Rotation offsets adjusted for automated assembly
@@ -16,6 +21,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
   - U401: FT Rotation Offset 180°
 
 ### Technical Details
+- **USB Hub Stability:** CH334 now operates in internal oscillator mode without external crystal
+- **Extended Input Voltage:** XR76208 now supports 12-24V input voltage through Zener diode-based enable circuit
+- **USB Backfeed Protection:** TPS2557 prevents backfeeding from external USB devices and provides overcurrent/short-circuit protection
 - **Manufacturing Efficiency:** Optimized component orientation reduces production time
 
 ## [Rev. 0.3] - 2025-12-09

@@ -9,6 +9,11 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
 
 ## [Unreleased]
 
+### Behoben
+- **USB-Hub-Controller (U401/CH334):** Pin 4 (XO) auf GND gelegt, um den Betrieb ohne Kristall zu ermöglichen
+- **DC/DC-Wandler (U202/XR76208):** Enable-Beschaltung von Spannungsteiler auf Zenerdiode geändert, um 12V-Betrieb zu ermöglichen
+- **USB-Ausgänge:** Sicherungen durch TPS2557 Power-Distribution-Switches ersetzt, um Backfeeding zu verhindern
+
 ### Geändert
 - **Produktion:** Testpunkte TP202/TP203 von Stückliste ausgeschlossen
 - **JLCPCB Optimierung:** Rotations-Offsets für automatische Bestückung angepasst
@@ -16,6 +21,9 @@ und dieses Projekt folgt [Semantic Versioning](https://semver.org/lang/de/).
   - U401: FT Rotation Offset 180°
 
 ### Technische Details
+- **USB-Hub Stabilität:** CH334 arbeitet nun im internen Oszillator-Modus ohne externen Kristall
+- **Erweiterte Eingangsspannung:** XR76208 unterstützt nun 12-24V Eingangsspannung durch Zenerdioden-basierte Enable-Schaltung
+- **USB-Backfeed-Schutz:** TPS2557 verhindert Rückspeisung von externen USB-Geräten und bietet Überstrom-/Kurzschlussschutz
 - **Fertigungseffizienz:** Optimierte Bauteil-Orientierung reduziert Produktionszeit
 
 ## [Rev. 0.3] - 2025-12-09

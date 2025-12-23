@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "4ae99543-64c8-472f-befd-04c32f138656")
-	(paper "A4")
+	(paper "A3")
 	(title_block
 		(title "EWS - Power, CANbus and USB HAT for 3D Printers")
 		(date "2025-12-04")
